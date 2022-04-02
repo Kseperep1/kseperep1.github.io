@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;500&display=swap');
+
+* {
+    font-family: 'Roboto Slab', serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all .2s linear;
+}
+
+html, body, main, section {
+    scroll-behavior: smooth;
+}
+
+html {
+    /* font-size: 70%; */
+    /* overflow-y: none; */
+    position: fixed;
+    top: 30%;
+    left: 0;
+    z-index: 1;
+    /* height: -30%; */
+    /* width: 100%; */
+}
+
+ /* scrollerbar */
+
+/* ::-webkit-scrollbar{
+    width: 20px;
+    display: none; 
+}
+
+html::-webkit-scrollbar-track {
+    background: #363636;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #FEE715FF;
+} */
+
+body {
+    /* background: #101820FF; */
+    position: absolute;
+    /* padding-top: 15rem; */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    height: 30%;
+    width: 100%;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow:column;
+    text-align: center;
+}
+
+header .user img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border: 3px solid #FEE715FF;
+}
+
+header .user .name {
+    font-size: 18px;
+    color: white;
+}
+
+header .user .career {
+    font-size: 13px;
+    color: rgb(199, 199, 199);
+    padding: 8px;
+}
+
+header .nav-bar ul {
+    list-style: none;
+    padding: 3px, 5px;
+    display: flex;
+    transition: all 0.4s;
+}
+
+header .nav-bar ul li a{
+    color: white;
+    display: block;
+    padding: 6px;
+    width: 130px;
+    margin: 10px 50px;
+    font-size: 15px;
+    border-radius: 15px 50px;
+}
+
+header .nav-bar ul li a:hover {
+    background: #333;
+    transform: scale(1.1);
+}
+
+#nav-menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: #1a1a1a;
+    background:white;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 10px 15px;
+    z-index: 1000;
+    display: none;
+}
+
+h3 {
+    color: black;
+}
+
+main {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    font-size: 1rem;
+    scroll-snap-type: x proximity;
+    overflow-x: scroll;
+    overflow-y: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem;
+}
+
+main section{
+    flex: none;
+    justify-content:center;
+    align-items: center;
+    width: 100vw;
+    height: 70vh;
+    scroll-snap-align: start;
+} 
+
+section p {
+    margin-top: 30px;
+    margin-right: 70px;
+    margin-left: 70px;
+    z-index: 10;
+}
+
+#skills {
+    height: 100px
+}
+
+#skills img{
+    height: 100px;
+    /* width: 100px; */
+}
+
+/* media queries for responsiveness */
+@media screen and (max-width:950px) {
+
+    html{
+        font-size: 80%;
+        top:    10%;
+    }
+
+    section{
+        padding:1rem 4rem;
+    }
+
+    
+
+}
+@media screen and (max-width:950px) {
+
+    header {
+        left: -120%;
+    }
+    
+    #nav-menu {
+        display: block;
+    }
+
+    header.header-on {
+        left: 0%;
+    }
+
+    body {
+        padding:0%;
+    }
+}
+
+
+
+@media screen and (max-width:950px) {
+    
+    header {
+        left: -120;
+        z-index: 1000;
+        height: 100%;
+        width: 350px;
+    }
+    
+    header .user img {
+        height: 200px;
+        width: 200px;
+    }
+    
+    header .nav-bar ul {
+        display: block;
+    }
+    
+    header .nav-bar ul li a{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width:400px) {
+
+    header {
+        width: 100vw;
+    }
+}
+
+#btnDownload {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #333;
+    color: white;
+    border-radius: 15px 50px;
+    cursor: pointer;
+    display: block;
+    padding: 6px;
+    width: 145px;
+    margin: 10px 50px;
+    font-size: 10px;
+}
+
+#btnDownload i {
+    top: 0;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
