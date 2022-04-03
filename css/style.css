@@ -192,7 +192,6 @@ section p {
 
 #skills ul img{
     position: relative;
-    /* width: 300px; */
     /* width: 27rem; */
     /* margin :1rem 0rem; */
     padding-left: 5rem;
@@ -291,6 +290,11 @@ section p {
         height: 130px;
         width: 130px;
     }
+
+     #skills ul img{
+        width: 20rem;
+        margin-left: -70px;
+    }
 }
 @media screen and (max-height:500px) and (orientation: landscape) {
 
@@ -318,6 +322,8 @@ section p {
         font-size: 13px;
         width: auto;
     }
+
+   
 }
 
 #btnDownload {
