@@ -75,7 +75,7 @@ header .nav-bar ul li a{
     display: block;
     padding: 6px;
     width: 130px;
-    margin: 10px 50px;
+    margin: 10px 15px;
     font-size: 15px;
     border-radius: 15px 50px;
 }
@@ -115,7 +115,7 @@ main {
     font-size: 1rem;
     scroll-snap-type: x proximity;
     overflow-x: scroll;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     display: flex;
     justify-content: space-between;
     padding: 6rem;
@@ -155,12 +155,13 @@ section p {
 }
 
 #skills ul{
-    display:flex;
+    display:block;
     /* width: 100%; */
-    /* position: fixed; */
-    /* top: 0; */
+    /* height:300px; */
+    position: relative;
+    /* top: 30; */
     /* width: 100%; */
-    /* left:0% */
+    /* left:4rem; */
     /* flex: none; */
     /* justify-content:space-between; */
     /* align-items: center; */
@@ -173,14 +174,27 @@ section p {
 }
 
 #skills ul img{
-    height: 100px;
-    padding: 0;
-    justify-content:space-between; 
-    align-items: center;
+    width: 27rem;
+    margin :4rem 1rem;
+    padding-left: 4rem;
+    border-left: 4rem;
+    position: relative;
 }
 
-#contact img {
-    /* position: fixed; */
+#skills ul img{
+    /* height: 150px;
+    width: 200px; */
+    /* padding: 0; */
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    padding:1rem 0;
+    padding-left: 3rem;
+    /* align-items: center; */
+}
+
+/* #contact img {
+    position: fixed;
     display: flex;
     height: 200px;
     width: 250px;
@@ -188,8 +202,8 @@ section p {
     margin-top: 250px;
     bottom: 50px;
     left: 50px;
-    /* padding: 0 8em */
-}
+    padding: 0 8em
+} */
 
 /* media queries for responsiveness */
 @media screen and (max-width:950px) {
@@ -228,13 +242,15 @@ section p {
     }
     header .nav-bar ul {
         display: block;
+        margin: 50px;
     }
     header .user img {
         height: 200px;
         width: 200px;
     }
+
     header .nav-bar ul li a{
-        width: 200px;
+        width: 35vw;
     }
 }
 
@@ -274,22 +290,30 @@ section p {
     header .user .career {
         font-size: 10px;
     }
+
+    header .nav-bar ul{
+        margin: 0px;
+    }
+
     header .nav-bar ul li a{
         font-size: 13px;
+        width: auto;
     }
 }
 
 #btnDownload {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
+    position: relative;
+    /* bottom: 65%; */
+    /* right: 10px; */
+    left: 250px;
+    align-items: center;
     background: #333;
     color: white;
     border-radius: 15px 50px;
     cursor: pointer;
     display: block;
     padding: 6px;
-    width: 145px;
+    width: 135px;
     margin: 10px 50px;
     font-size: 10px;
 }
@@ -299,3 +323,4 @@ section p {
     padding: 0.5rem;
     font-size: 1rem;
 }
+
