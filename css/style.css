@@ -16,33 +16,14 @@ html, body, main, section {
 }
 
 html {
-    /* font-size: 70%; */
-    /* overflow-y: none; */
     position: fixed;
     top: 30%;
     left: 0;
     z-index: 1;
-    /* height: -30%; */
-    /* width: 100%; */
 }
-
- /* scrollerbar */
-
-/* ::-webkit-scrollbar{
-    width: 20px;
-    display: none; 
-}
-
-html::-webkit-scrollbar-track {
-    background: #363636;
-}
-
-html::-webkit-scrollbar-thumb {
-    background: #FEE715FF;
-} */
 
 body {
-    /* background: #101820FF; */
+    background: #F7F4E9;
     position: absolute;
     /* padding-top: 15rem; */
 }
@@ -68,7 +49,7 @@ header .user img {
     object-fit: cover;
     margin-bottom: 1rem;
     margin-top: 1rem;
-    border: 3px solid #FEE715FF;
+    border: 3px solid #F7F4E9;
 }
 
 header .user .name {
@@ -100,7 +81,7 @@ header .nav-bar ul li a{
 }
 
 header .nav-bar ul li a:hover {
-    background: #333;
+    background: #e4c63e;
     transform: scale(1.1);
 }
 
@@ -122,6 +103,10 @@ h3 {
     color: black;
 }
 
+img {
+    width: 100%;
+}
+
 main {
     position: fixed;
     width: 100%;
@@ -136,14 +121,25 @@ main {
     padding: 6rem;
 }
 
+/* main img {
+    position: auto;
+    top: 5rem;
+    padding: -50px;
+    justify-content:center;
+    width: 150vw;
+    height: 150px;
+    display: fixed;
+} */
+
 main section{
     flex: none;
-    justify-content:center;
+    justify-content:space-between;
     align-items: center;
     width: 100vw;
     height: 70vh;
     scroll-snap-align: start;
 } 
+
 
 section p {
     margin-top: 30px;
@@ -153,12 +149,30 @@ section p {
 }
 
 #skills {
-    height: 100px
+    position: relative;
+    height: 100px;
+    display: block;
 }
 
-#skills img{
-    height: 100px;
-    /* width: 100px; */
+#skills ul li {
+    list-style: none;
+}
+
+/* #skills img{
+    height: 10rem;
+    width: 15rem;
+} */
+
+#contact img {
+    /* position: fixed; */
+    display: flex;
+    height: 200px;
+    width: 250px;
+    margin-left: 50px;
+    margin-top: 250px;
+    bottom: 50px;
+    left: 50px;
+    /* padding: 0 8em */
 }
 
 /* media queries for responsiveness */
@@ -180,6 +194,9 @@ section p {
 
     header {
         left: -120%;
+        z-index: 1000;
+        height: 100%;
+        width: 350px;
     }
     
     #nav-menu {
@@ -193,37 +210,56 @@ section p {
     body {
         padding:0%;
     }
-}
-
-
-
-@media screen and (max-width:950px) {
-    
-    header {
-        left: -120;
-        z-index: 1000;
-        height: 100%;
-        width: 350px;
+    header .nav-bar ul {
+        display: block;
     }
-    
     header .user img {
         height: 200px;
         width: 200px;
     }
-    
-    header .nav-bar ul {
-        display: block;
-    }
-    
     header .nav-bar ul li a{
         width: 200px;
     }
 }
 
-@media screen and (max-width:400px) {
+
+
+@media screen and (max-width:700px) {
+    
+    html {
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width:600px) {
 
     header {
-        width: 100vw;
+        width: 45vw;
+    }
+    header .user img {
+        height: 130px;
+        width: 130px;
+    }
+}
+@media screen and (max-height:500px) and (orientation: landscape) {
+
+    header {
+        width: 35vw;
+    }
+    header .user img {
+        height: 80px;
+        width: 80px;
+    }
+    header .user .name {
+        font-size: 15px;
+        color: white;
+    }
+    
+    header .user .career {
+        font-size: 10px;
+    }
+    header .nav-bar ul li a{
+        font-size: 13px;
     }
 }
 
