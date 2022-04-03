@@ -161,6 +161,7 @@ section p {
     flex-wrap: wrap;
     padding:1rem 0;
     padding-left: 3rem;
+    padding-right: 3rem;
 
     /* display:block; */
     /* width: 100%; */
@@ -191,7 +192,7 @@ section p {
 
 #skills ul img{
     position: relative;
-    width: 300px;
+    /* width: 300px; */
     /* width: 27rem; */
     /* margin :1rem 0rem; */
     padding-left: 5rem;
