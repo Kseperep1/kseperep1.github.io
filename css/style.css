@@ -115,7 +115,7 @@ main {
     font-size: 1rem;
     scroll-snap-type: x proximity;
     overflow-x: scroll;
-    overflow-y: none;
+    overflow-y: hidden;
     display: flex;
     justify-content: space-between;
     padding: 6rem;
@@ -154,13 +154,29 @@ section p {
     display: block;
 }
 
+#skills ul{
+    display:flex;
+    /* width: 100%; */
+    /* position: fixed; */
+    /* top: 0; */
+    /* width: 100%; */
+    /* left:0% */
+    /* flex: none; */
+    /* justify-content:space-between; */
+    /* align-items: center; */
+    /* width: 10vw; */
+    width: 100vw;
+}
+
 #skills ul li {
     list-style: none;
 }
 
-#skills img{
-    height: 10rem;
-    width: 15rem;
+#skills ul img{
+    height: 100px;
+    padding: 0;
+    justify-content:space-between; 
+    align-items: center;
 }
 
 #contact img {
