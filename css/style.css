@@ -90,7 +90,7 @@ header .nav-bar ul li a:hover {
     top: 20px;
     right: 20px;
     color: #1a1a1a;
-    background:white;
+    background:#F7F4E9;
     border-radius: 50%;
     cursor: pointer;
     font-size: 15px;
@@ -158,10 +158,10 @@ section p {
     list-style: none;
 }
 
-/* #skills img{
+#skills img{
     height: 10rem;
     width: 15rem;
-} */
+}
 
 #contact img {
     /* position: fixed; */
