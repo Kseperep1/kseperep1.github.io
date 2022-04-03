@@ -291,9 +291,13 @@ section p {
         width: 130px;
     }
 
+    /* #skills ul .skill-box {
+        width: 5rem;
+    } */
+
      #skills ul img{
         width: 20rem;
-        margin-left: -70px;
+        margin-left: -70px;  
     }
 }
 @media screen and (max-height:500px) and (orientation: landscape) {
