@@ -65,8 +65,8 @@ header .user .career {
 
 header .nav-bar ul {
     list-style: none;
-    padding: 3px, 5px;
     display: flex;
+    padding: 3px, 5px;
     transition: all 0.4s;
 }
 
@@ -133,6 +133,7 @@ main {
 
 main section{
     flex: none;
+    list-style: none;
     justify-content:space-between;
     align-items: center;
     width: 100vw;
@@ -155,6 +156,7 @@ section p {
 }
 
 #skills ul{
+    list-style: none;
     display: flex;
     align-items: center;
     justify-content:space-between;
@@ -223,6 +225,17 @@ section p {
     padding: 0 8em
 } */
 
+#contact ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    padding:1rem 0;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
 #contact ul .contact-box {
     width: 25rem;
     margin:1rem 0rem;
@@ -290,7 +303,7 @@ section p {
 @media screen and (max-width:700px) {
     
     html {
-        font-size: 80%;
+        font-size: 100%;
     }
 }
 
@@ -343,20 +356,31 @@ section p {
    
 }
 
-#btnDownload {
+#education {
+    list-style: none;
     position: relative;
-    /* bottom: 65%; */
-    /* right: 10px; */
-    left: 250px;
+}
+
+#education ul {
+    list-style: none;
+    /* position: relative; */
+}
+
+#btnDownload {
+    position: absolute;
+    /* top: 0%; */
+    bottom: 0%;
+    right: 0;
+    /* width: 135px; */
+    /* left: 0; */
+    padding: 6px;
+    margin: 10px 50px;
     align-items: center;
     background: #333;
     color: white;
     border-radius: 15px 50px;
     cursor: pointer;
     display: block;
-    padding: 6px;
-    width: 135px;
-    margin: 10px 50px;
     font-size: 10px;
 }
 
