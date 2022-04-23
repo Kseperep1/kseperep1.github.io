@@ -226,6 +226,7 @@ section p {
 } */
 
 #contact ul {
+    position: relative;
     list-style: none;
     display: flex;
     align-items: center;
@@ -237,16 +238,18 @@ section p {
 }
 
 #contact ul .contact-box {
+    /* position: grid; */
     width: 25rem;
     margin:1rem 0rem;
     padding-left: 4rem;
     padding-right: 4rem;
     /* border-left: 1rem solid #333; */
-    position: relative;
 }
 
 #contact ul a img{
     position: relative;
+    height: 100px;
+    width: 100px;
 }
 
 /* media queries for responsiveness */
