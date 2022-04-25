@@ -127,6 +127,11 @@ main {
     padding: 2rem;
 }
 
+main h1 {
+    text-decoration: 1rem solid;
+    padding: 2rem;
+}
+
 /* main img {
     position: auto;
     top: 5rem;
