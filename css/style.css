@@ -150,42 +150,33 @@ section p {
 }
 
 #skills {
-    position: relative;
+    /* position: relative;
     height: 100px;
-    display: block;
+    display: block; */
+    border-left: 1rem solid #333;
 }
 
 #skills ul{
     list-style: none;
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 500px 1fr;
+    place-items: center;
+
+    /* display: flex; */
+    /* align-items: center;
     justify-content:space-between;
     flex-wrap: wrap;
     padding:1rem 0;
     padding-left: 3rem;
-    padding-right: 3rem;
-
-    /* display:block; */
-    /* width: 100%; */
-    /* height:300px; */
-    /* position: relative; */
-    /* top: 30; */
-    /* width: 100%; */
-    /* left:4rem; */
-    /* flex: none; */
-    /* justify-content:space-between; */
-    /* align-items: center; */
-    /* width: 10vw; */
-    /* width: 100vw; */
+    padding-right: 3rem; */
 }
 
 #skills ul .skill-box {
-    width: 25rem;
-    margin:1rem 0rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    /* border-left: 1rem solid #333; */
-    position: relative;
+    width: 20rem;
+    /* margin:1rem 0rem; */
+    /* padding-left: 4rem; */
+    /* padding-right: 4rem; */
+    /* position: relative; */
 }
 
 #skills ul li {
