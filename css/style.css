@@ -196,7 +196,7 @@ section p {
 #skills ul{
     list-style: none;
     display: grid;
-    /* grid-template-columns: repeat(4, auto); */
+    grid-template-columns: repeat(auto-fill, 25%);
     grid-row-gap: 20px;
     /* grid-template-rows: 100px 200px; */
     place-items: center;
