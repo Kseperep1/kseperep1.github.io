@@ -204,7 +204,7 @@ section p {
     grid-template-columns: repeat(auto-fill, 250px);
     justify-content:center;
     grid-row-gap: 20px;
-    /* grid-template-rows: 100px 200px; */
+    /* grid-template-rows: repeat(auto-fill, 250px); */
     place-items: center;
 }
 
