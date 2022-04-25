@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;500&display=swap');
 
+:root {
+    --mustard-yellow: #e4c63e;
+    --light-grey: rgb(199, 199, 199);
+    --cream-white: #F7F4E9;
+}
+
 * {
     font-family: 'Roboto Slab', serif;
     margin: 0px;
@@ -23,7 +29,7 @@ html {
 }
 
 body {
-    background: #F7F4E9;
+    background: var(--cream-white);
     position: absolute;
     /* padding-top: 15rem; */
 }
@@ -59,7 +65,7 @@ header .user .name {
 
 header .user .career {
     font-size: 13px;
-    color: rgb(199, 199, 199);
+    color: var(--light-grey);
     padding: 8px;
 }
 
@@ -81,7 +87,7 @@ header .nav-bar ul li a{
 }
 
 header .nav-bar ul li a:hover {
-    background: #e4c63e;
+    background: var(--mustard-yellow);
     transform: scale(1.1);
 }
 
@@ -150,8 +156,8 @@ section p {
 }
 
 #skills {
-    /* position: relative;
-    height: 100px;
+    position: relative;
+    /* height: 100px;
     display: block; */
     border-left: 1rem solid #333;
 }
@@ -159,7 +165,8 @@ section p {
 #skills ul{
     list-style: none;
     display: grid;
-    grid-template-columns: 1fr 500px 1fr;
+    grid-template-columns: repeat(4, 25%);
+    /* grid-template-rows: 100px 200px; */
     place-items: center;
 
     /* display: flex; */
