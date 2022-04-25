@@ -124,7 +124,7 @@ main {
     overflow-x: scroll;
     overflow-y: scroll;
     justify-content: space-between;
-    padding: 6rem;
+    padding: 2rem;
 }
 
 /* main img {
@@ -196,7 +196,7 @@ section p {
 #skills ul{
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    /* grid-template-columns: repeat(4, auto); */
     grid-row-gap: 20px;
     /* grid-template-rows: 100px 200px; */
     place-items: center;
@@ -261,8 +261,8 @@ section p {
 
 #contact ul a img{
     /* position: relative; */
-    height: 230px;
-    width: 230px;
+    height: 220px;
+    width: 220px;
 }
 
 /* media queries for responsiveness */
@@ -275,6 +275,10 @@ section p {
 
     section{
         padding:1rem 4rem;
+    }
+
+    main {
+        padding: 8rem;
     }
 
     
