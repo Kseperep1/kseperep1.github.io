@@ -116,13 +116,13 @@ img {
 main {
     position: fixed;
     width: 100%;
-    height: 100vh;
+    /* height: 110vh; */
+    display: flex;
     text-align: center;
     font-size: 1rem;
     scroll-snap-type: x proximity;
     overflow-x: scroll;
     overflow-y: scroll;
-    display: flex;
     justify-content: space-between;
     padding: 6rem;
 }
@@ -283,6 +283,7 @@ section p {
 @media screen and (max-width:950px) {
 
     header {
+        position: fixed;
         left: -120%;
         z-index: 1000;
         height: 100%;
