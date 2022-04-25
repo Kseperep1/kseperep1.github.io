@@ -344,6 +344,10 @@ section p {
         width: 130px;
     }
 
+    main section {
+        position: sticky;
+    }
+
     /* #skills ul .skill-box {
         width: 5rem;
     } */
