@@ -157,25 +157,16 @@ section p {
 
 #skills {
     position: relative;
-    /* height: 100px;
-    display: block; */
-    border-left: 1rem solid #333;
+    /* border-left: 1rem solid #333; */
 }
 
 #skills ul{
     list-style: none;
     display: grid;
     grid-template-columns: repeat(4, 25%);
+    grid-row-gap: 20px;
     /* grid-template-rows: 100px 200px; */
     place-items: center;
-
-    /* display: flex; */
-    /* align-items: center;
-    justify-content:space-between;
-    flex-wrap: wrap;
-    padding:1rem 0;
-    padding-left: 3rem;
-    padding-right: 3rem; */
 }
 
 #skills ul .skill-box {
@@ -222,27 +213,17 @@ section p {
     left: 50px;
     padding: 0 8em
 } */
-
-#contact ul {
+#contact {
     position: relative;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-    flex-wrap: wrap;
-    padding:1rem 0;
-    padding-left: 3rem;
-    padding-right: 3rem;
+
 }
 
-#contact ul .contact-box {
-
-    position: grid;
-    /* width: 25rem;
-    margin:1rem 0rem;
-    padding-left: 4rem;
-    padding-right: 4rem; */
-    border-left: 1rem solid #333;
+#contact ul {
+    list-style: none;
+    display: grid;
+    /* grid-template-columns: repeat(4, 25%); */
+    align-items: center;
+    margin-top: 20px;
 }
 
 #contact ul a img{
