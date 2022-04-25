@@ -22,20 +22,20 @@ html, body, main, section {
 }
 
 html {
-    position: fixed;
-    top: 30%;
+    /* position: fixed; */
+    /* top: 30%; */
     left: 0;
     z-index: 1;
 }
 
 body {
     background: var(--cream-white);
-    position: absolute;
+    position: relative;
     /* padding-top: 15rem; */
 }
 
 header {
-    position: fixed;
+    position: relative;
     top: 0;
     z-index: 1;
     height: 30%;
@@ -155,6 +155,39 @@ section p {
     z-index: 10;
 }
 
+#education {
+    position: relative;
+}
+
+#education ul {
+    list-style: none;
+    /* position: relative; */
+}
+
+#btnDownload {
+    position: sticky;
+    /* top: 0%; */
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    /* width: 135px; */
+    padding: 6px;
+    margin: 10px 50px;
+    align-items: center;
+    background: #333;
+    color: white;
+    border-radius: 15px 50px;
+    cursor: pointer;
+    display: block;
+    font-size: 10px;
+}
+
+#btnDownload i {
+    top: 0;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
 #skills {
     position: relative;
     /* border-left: 1rem solid #333; */
@@ -163,7 +196,7 @@ section p {
 #skills ul{
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(4, auto);
     grid-row-gap: 20px;
     /* grid-template-rows: 100px 200px; */
     place-items: center;
@@ -312,7 +345,7 @@ section p {
 @media screen and (max-height:500px) and (orientation: landscape) {
 
     header {
-        width: 35vw;
+        width: auto;
     }
     header .user img {
         height: 80px;
@@ -339,37 +372,4 @@ section p {
    
 }
 
-#education {
-    list-style: none;
-    position: relative;
-}
-
-#education ul {
-    list-style: none;
-    /* position: relative; */
-}
-
-#btnDownload {
-    position: absolute;
-    /* top: 0%; */
-    bottom: 0%;
-    right: 0;
-    /* width: 135px; */
-    /* left: 0; */
-    padding: 6px;
-    margin: 10px 50px;
-    align-items: center;
-    background: #333;
-    color: white;
-    border-radius: 15px 50px;
-    cursor: pointer;
-    display: block;
-    font-size: 10px;
-}
-
-#btnDownload i {
-    top: 0;
-    padding: 0.5rem;
-    font-size: 1rem;
-}
 
