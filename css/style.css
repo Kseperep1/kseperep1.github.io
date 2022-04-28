@@ -4,6 +4,7 @@
     --mustard-yellow: #e4c63e;
     --light-grey: rgb(199, 199, 199);
     --cream-white: #F7F4E9;
+    --white: white;
 }
 
 * {
@@ -60,7 +61,7 @@ header .user img {
 
 header .user .name {
     font-size: 18px;
-    color: white;
+    color: var(--white);
 }
 
 header .user .career {
@@ -96,7 +97,7 @@ header .nav-bar ul li a:hover {
     top: 20px;
     right: 20px;
     color: #1a1a1a;
-    background:#F7F4E9;
+    background:var(--cream-white);
     border-radius: 50%;
     cursor: pointer;
     font-size: 15px;
@@ -119,12 +120,12 @@ main {
     /* height: 110vh; */
     display: flex;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.3rem;
     scroll-snap-type: x proximity;
     overflow-x: scroll;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     justify-content: space-between;
-    padding: 2rem;
+    /* padding: 2rem; */
 }
 
 main h1 {
@@ -143,6 +144,7 @@ main h1 {
 } */
 
 main section{
+    position: relative;
     flex: none;
     list-style: none;
     justify-content:space-between;
@@ -155,9 +157,10 @@ main section{
 
 section p {
     margin-top: 30px;
-    margin-right: 70px;
-    margin-left: 70px;
+    /* margin-right: 70px; */
+    /* margin-left: 70px; */
     z-index: 10;
+    padding: 3rem;
 }
 
 #education {
@@ -170,21 +173,18 @@ section p {
 }
 
 #btnDownload {
-    position: sticky;
-    /* top: 0%; */
-    bottom: 0%;
-    left: 0;
-    right: 0;
-    /* width: 135px; */
+    position: absolute;
+    bottom: 20%;
+    right: 10%;
+    width: 135px;
     padding: 6px;
     margin: 10px 50px;
-    align-items: center;
-    background: #333;
-    color: white;
-    border-radius: 15px 50px;
-    cursor: pointer;
-    display: block;
     font-size: 10px;
+    border-radius: 15px 50px;
+    background: #333;
+    align-items: center;
+    color: white;
+    cursor: pointer;
 }
 
 #btnDownload i {
@@ -287,7 +287,10 @@ section p {
         padding: 8rem;
     }
 
-    
+    #btnDownload {
+        bottom: 0%;
+        right: 0%;
+    }
 
 }
 @media screen and (max-width:950px) {
