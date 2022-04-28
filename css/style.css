@@ -239,6 +239,13 @@ section p {
     width: 10%;
 }
 
+.yellow-tele {
+    position: absolute;
+    width:30%;
+    bottom: 10%;
+    left:5%;    
+}
+
 /* media queries for responsiveness */
 @media screen and (max-width:950px) {
 
@@ -281,6 +288,8 @@ section p {
         bottom: 20%;
         right: 0%;
     }
+
+    
 
 }
 @media screen and (max-width:950px) {
