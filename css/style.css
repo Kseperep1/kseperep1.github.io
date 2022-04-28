@@ -225,29 +225,6 @@ section p {
     width: 70%;
 }
 
-/* #skills ul img{
-    height: 150px;
-    width: 200px;
-    padding: 0;
-    display:flex;
-    justify-content:space-between;
-    flex-wrap: wrap;
-    padding:1rem 0;
-    padding-left: 3rem;
-    align-items: center;
-} */
-
-/* #contact img {
-    position: fixed;
-    display: flex;
-    height: 200px;
-    width: 250px;
-    margin-left: 50px;
-    margin-top: 250px;
-    bottom: 50px;
-    left: 50px;
-    padding: 0 8em
-} */
 #contact {
     position: relative;
 
@@ -263,30 +240,41 @@ section p {
 
 #contact ul a img{
     /* position: relative; */
-    height: 220px;
-    width: 220px;
+    height: 10%;
+    width: 10%;
 }
 
 /* media queries for responsiveness */
 @media screen and (max-width:950px) {
 
     html{
-        font-size: 80%;
+        font-size: 85%;
         top:    10%;
     }
 
     section{
-        padding:1rem 4rem;
+        padding:1rem;
     }
 
-    main {
-        padding: 8rem;
-    }
+    /* section p {
+        padding:1rem;
+    } */
+
+    /* main {
+        padding: 2rem;
+    } */
 
     #skills ul img{
-    padding-left: 3rem;
-    padding-right: 1rem;
-}
+        padding: 1rem;
+        height: 10%;
+        width: 10%;
+    }
+
+    #contact ul a img{
+        /* position: relative; */
+        height: 40%;
+        width: 40%;
+    }
 
     #btnDownload {
         bottom: 0%;
@@ -296,6 +284,10 @@ section p {
 }
 @media screen and (max-width:950px) {
 
+    main section {
+        height:100vh;
+    }
+    
     header {
         position: fixed;
         left: -120%;
@@ -327,15 +319,20 @@ section p {
     header .nav-bar ul li a{
         width: 35vw;
     }
+
+    #about {
+        height: 100vh
+    }
+
 }
 
 
 
 @media screen and (max-width:700px) {
     
-    html {
+    /* html {
         font-size: 100%;
-    }
+    } */
 }
 
 @media screen and (max-width:600px) {
@@ -357,8 +354,8 @@ section p {
     } */
 
      #skills ul img{
-        width: 20rem;
-        margin-left: -70px;  
+        width: 15rem;
+        /* margin-left: -70px;   */
     }
 }
 @media screen and (max-height:500px) and (orientation: landscape) {
