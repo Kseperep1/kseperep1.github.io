@@ -140,6 +140,7 @@ main h1 {
     display: fixed;
 } */
 
+
 main section{
     position: relative;
     flex: none;
@@ -151,9 +152,8 @@ main section{
     scroll-snap-align: start;
 } 
 
-
 section p {
-    margin-top: 30px;
+    margin-top: 20px;
     /* margin-right: 70px; */
     /* margin-left: 70px; */
     z-index: 10;
@@ -171,8 +171,8 @@ section p {
 
 #btnDownload {
     position: absolute;
-    bottom: 20%;
-    right: 10%;
+    bottom: 10%;
+    right: 5%;
     width: 135px;
     padding: 6px;
     margin: 10px 50px;
@@ -248,7 +248,8 @@ section p {
     }
 
     section{
-        padding:1rem;
+        padding:2rem 1rem;
+        margin-top: 5rem;
     }
 
     /* section p {
@@ -257,6 +258,9 @@ section p {
 
     /* main {
         padding: 2rem;
+    } */
+
+    /* #about {
     } */
 
     #skills ul{
@@ -274,7 +278,7 @@ section p {
     }
 
     #btnDownload {
-        bottom: 0%;
+        bottom: 10%;
         right: 0%;
     }
 
