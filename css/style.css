@@ -247,6 +247,7 @@ section p {
     bottom: 2rem;
     left:2rem;    
 }
+
 #about img {
     position: absolute;
     width:39%;
@@ -254,19 +255,25 @@ section p {
     left: -8rem;
 }
 
-.blue-jeans {
+.thinking {
     position: absolute;
     left: 0rem;
-    top: -5rem;
+    top: 0rem;
     width: 22rem;
 }
 
 .white-shirt {
     position: absolute;
-    bottom: 0rem;
-    left: 0rem;
-    /* top: -5rem; */
+    bottom: 1rem;
+    left: 1rem;
     width: 18rem;
+}
+
+.redbat-lookaway {
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
+    width: 13rem;
 }
 
 /* media queries for responsiveness */
