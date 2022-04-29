@@ -250,10 +250,23 @@ section p {
 #about img {
     position: absolute;
     width:39%;
-    /* height:70%; */
     bottom: 0%;
     left: -8rem;
-    /* float:left; */
+}
+
+.blue-jeans {
+    position: absolute;
+    left: 0rem;
+    top: -5rem;
+    width: 22rem;
+}
+
+.white-shirt {
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem;
+    /* top: -5rem; */
+    width: 18rem;
 }
 
 /* media queries for responsiveness */
