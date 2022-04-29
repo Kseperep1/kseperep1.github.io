@@ -211,10 +211,6 @@ section p {
     /* position: relative; */
 }
 
-#skills ul li {
-    list-style: none;
-}
-
 #skills ul img{
     /* position: flex; */
     padding: 3rem;
@@ -239,11 +235,25 @@ section p {
     width: 10%;
 }
 
+.dangling-telephone {
+    position: absolute;
+    right: 1rem;
+    width: 20rem;
+}
+
 .yellow-tele {
     position: absolute;
-    width:30%;
-    bottom: 10%;
-    left:5%;    
+    width:24rem;
+    bottom: 2rem;
+    left:2rem;    
+}
+#about img {
+    position: absolute;
+    width:39%;
+    /* height:70%; */
+    bottom: 0%;
+    left: -8rem;
+    /* float:left; */
 }
 
 /* media queries for responsiveness */
