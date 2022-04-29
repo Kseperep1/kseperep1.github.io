@@ -241,10 +241,10 @@ section p {
     width: 20rem;
 }
 
-.yellow-tele {
+.white-shirt {
     position: absolute;
-    width:24rem;
-    bottom: 2rem;
+    width:22rem;
+    bottom: 0rem;
     left:2rem;    
 }
 
@@ -255,17 +255,17 @@ section p {
     left: -8rem;
 }
 
-.thinking {
+.yellow-stairs {
     position: absolute;
-    left: 0rem;
-    top: 0rem;
-    width: 22rem;
+    right: 0rem;
+    bottom: 0rem;
+    width: 30rem;
 }
 
-.white-shirt {
+.pink-shirt {
     position: absolute;
-    bottom: 1rem;
-    left: 1rem;
+    top: 2rem;
+    left: 2rem;
     width: 18rem;
 }
 
