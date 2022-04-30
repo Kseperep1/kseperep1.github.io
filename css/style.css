@@ -162,9 +162,7 @@ main section{
     position: absolute;
     margin-left: 25rem;
     padding: 2rem;
-    text-align:left;
-    /* justify-content: left; */
-    /* border-left: 1rem solid #333; */
+    text-align: left;
 }
 
 .experience h6 {
@@ -193,9 +191,16 @@ main section{
     font-size: 1rem;
 }
 
-/* #skills {
-    border-left: 1rem solid #333;
-} */
+.project-box {
+    /* list-style: none; */
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    border: 0.3rem solid var(--mustard-yellow);
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: left;
+}
 
 #skills {
     position: relative;
@@ -243,7 +248,7 @@ main section{
     left:2rem;    
 }
 
-#about img {
+.yellow-crate {
     position: absolute;
     width:39%;
     bottom: 0%;
@@ -254,13 +259,13 @@ main section{
     position: absolute;
     right: 0rem;
     bottom: 0rem;
-    width: 30rem;
+    width: 35rem;
 }
 
 .pink-shirt {
     position: absolute;
-    top: 2rem;
-    left: 2rem;
+    top: 8rem;
+    left: 5rem;
     width: 18rem;
 }
 
@@ -268,7 +273,7 @@ main section{
     position: absolute;
     bottom: 0rem;
     right: 0rem;
-    width: 13rem;
+    width: 14rem;
 }
 
 /* media queries for responsiveness */
@@ -283,17 +288,6 @@ main section{
         padding:2rem 1rem;
         margin-top: 5rem;
     }
-
-    /* section p {
-        padding:1rem;
-    } */
-
-    /* main {
-        padding: 2rem;
-    } */
-
-    /* #about {
-    } */
 
     #skills ul{
         grid-template-columns: repeat(2, 150px);
