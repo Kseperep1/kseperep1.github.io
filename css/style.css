@@ -5,6 +5,7 @@
     --light-grey: rgb(199, 199, 199);
     --cream-white: #F7F4E9;
     --white: white;
+    --some-grey: #333;
 }
 
 * {
@@ -100,7 +101,7 @@ header .nav-bar ul li a:hover {
     background:var(--cream-white);
     border-radius: 50%;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 17px;
     padding: 10px 15px;
     z-index: 1000;
     display: none;
@@ -130,17 +131,6 @@ main h1 {
     padding: 2rem;
 }
 
-/* main img {
-    position: auto;
-    top: 5rem;
-    padding: -50px;
-    justify-content:center;
-    width: 150vw;
-    height: 150px;
-    display: fixed;
-} */
-
-
 main section{
     position: relative;
     flex: none;
@@ -152,12 +142,12 @@ main section{
     scroll-snap-align: start;
 } 
 
-section p {
+#about p {
     margin-top: 20px;
-    /* margin-right: 70px; */
-    /* margin-left: 70px; */
+    margin-right: 4rem;
+    margin-left: 28rem;
     z-index: 10;
-    padding: 3rem;
+    padding: 4rem;
 }
 
 #education {
@@ -166,7 +156,20 @@ section p {
 
 #education ul {
     list-style: none;
-    /* position: relative; */
+}
+
+.experience {
+    position: absolute;
+    margin-left: 25rem;
+    padding: 2rem;
+    text-align:left;
+    /* justify-content: left; */
+    /* border-left: 1rem solid #333; */
+}
+
+.experience h6 {
+    margin-top: 2rem;
+    border-bottom: 0.5rem solid var(--mustard-yellow)
 }
 
 #btnDownload {
