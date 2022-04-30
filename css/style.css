@@ -91,6 +91,7 @@ header .nav-bar ul li a{
 header .nav-bar ul li a:hover {
     background: var(--mustard-yellow);
     transform: scale(1.1);
+    color: var(--some-grey);
 }
 
 #nav-menu {
