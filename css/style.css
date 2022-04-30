@@ -153,6 +153,16 @@ main section{
     padding: 4rem;
 }
 
+#about span {
+    font-size: 3rem;
+}
+
+#about a :hover {
+    background: var(--mustard-yellow);
+    transform: scale(1.1);
+    color: var(--some-grey);
+}
+
 #education {
     position: relative;
 }
@@ -194,22 +204,22 @@ main section{
     font-size: 1rem;
 }
 
-#about a :hover {
-    background: var(--mustard-yellow);
-    transform: scale(1.1);
-    color: var(--some-grey);
-}
 
 
 .project-box {
     /* list-style: none; */
     display: grid;
-    grid-template-columns: repeat(4, 250px);
+    grid-template-columns: repeat(3, 25%);
     border: 0.3rem solid var(--mustard-yellow);
+    justify-content: center;
     align-items: center;
     margin-top: 10px;
     margin-left: 20px;
     text-align: left;
+}
+
+.project-box img {
+    width: 20rem;
 }
 
 #skills {
