@@ -57,7 +57,8 @@ header .user img {
     object-fit: cover;
     margin-bottom: 1rem;
     margin-top: 1rem;
-    border: 3px solid #F7F4E9;
+    /* border: 3px solid #F7F4E9; */
+    border: 3px solid var(--mustard-yellow);
 }
 
 header .user .name {
@@ -192,6 +193,13 @@ main section{
     padding: 0.5rem;
     font-size: 1rem;
 }
+
+#about a :hover {
+    background: var(--mustard-yellow);
+    transform: scale(1.1);
+    color: var(--some-grey);
+}
+
 
 .project-box {
     /* list-style: none; */
