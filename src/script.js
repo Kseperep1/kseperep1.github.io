@@ -14,3 +14,8 @@ $(document).ready(function () {
     
 
 });
+
+$('.nav-bar').on('click','li', function () {
+    $('.nave-bar li.active').removeClass('active');
+    $(this).addClass('active');
+});
