@@ -6,6 +6,7 @@
     --cream-white: #F7F4E9;
     --white: white;
     --some-grey: #333;
+    --black: black;
 }
 
 * {
@@ -28,6 +29,8 @@ html {
     /* top: 30%; */
     left: 0;
     z-index: 1;
+    width: 100vw;
+    height: 100vh;
 }
 
 body {
@@ -35,13 +38,17 @@ body {
     position: relative;
     height: 100%;
     /* padding-top: 15rem; */
+    text-rendering: optimizeSpeed;
 }
+
+/* HEADER */
+/* `````````````````````````````````````````````````````````` */
 
 header {
     position: relative;
     top: 0;
     z-index: 1;
-    height: 30%;
+    height: 30vh;
     width: 100%;
     background: #1a1a1a;
     display: flex;
@@ -63,7 +70,8 @@ header {
 }
 
 #user .name {
-    font-size: 18px;
+    font-size: clamp(1rem, 1.5vw, 1.8
+    rem);
     color: var(--white);
 }
 
@@ -96,6 +104,9 @@ header {
     color: var(--some-grey);
 }
 
+/* SMARTPHONE NAV-MENU */
+/* `````````````````````````````````````````````````````````` */
+
 #nav-menu {
     position: fixed;
     top: 20px;
@@ -110,15 +121,13 @@ header {
     display: none;
 }
 
-/* h3 {
-    color: black;
-} */
-
+/* MAIN */
+/* `````````````````````````````````````````````````````````` */
 
 main {
     position: fixed;
     width: 100%;
-    height: 70%;
+    height: 70vh;
     display: flex;
     text-align: center;
     font-size: 2vw;
@@ -130,18 +139,22 @@ main {
 }
 
 main p {
-    font-size: 1.5vw;
+    
+    font-size: clamp(1rem, 1.5vw, 2rem); 
+    /* font-size: 1.5vw; */
 }
 
 main h1 {
+    font-size: clamp(1.5rem, 2.5vw, 4rem);
     text-decoration: 1rem solid;
-    padding: 2rem;
+    margin: 0.5em 1em 0 1em;
+    float: center;
 }
 
 main section{
-    color: var(--white);
-    /* background: var(--cream-white); */
-    background: #333;
+    color: var(--black);
+    background: var(--cream-white);
+    /* background: #333; */
     position: relative;
     flex: none;
     list-style: none;
@@ -150,6 +163,15 @@ main section{
     width: 100vw;
     height: 70vh;
     scroll-snap-align: start;
+}
+
+/* ABOUT SECTION*/
+/* `````````````````````````````````````````````````````````` */
+
+#about {
+    position: relative;
+    /* width: 100%;
+    height: 100%; */
 }
 
 .yellow-crate {
@@ -170,35 +192,14 @@ main section{
 }
 
 #about span {
-    font-size: 3rem;
-    padding-left: 1rem;
+    font-size: clamp(1.3rem, 3rem, 5rem);
+    /* padding-left: 1rem; */
 }
 
 #about a :hover {
     background: var(--mustard-yellow);
     transform: scale(1.1);
     color: var(--some-grey);
-}
-
-#education {
-    position: relative;
-}
-
-#education ul {
-    list-style: none;
-}
-
-.experience {
-    position: absolute;
-    margin-left: 25rem;
-    padding: 2rem;
-    text-align: left;
-    font-size: 1.5vw;
-}
-
-.experience h6 {
-    margin-top: 2rem;
-    border-bottom: 0.3rem solid var(--mustard-yellow)
 }
 
 #btnDownload {
@@ -223,26 +224,86 @@ main section{
     font-size: 1rem;
 }
 
+/* EDUCATION SECTION */
+/* `````````````````````````````````````````````````````````` */
 
+#education {
+    position: relative;
+}    
+
+.pink-shirt {
+    position: absolute;
+    top: 8rem;
+    left: 5rem;
+    height: 60%;
+}
+
+#education ul {
+    list-style: none;
+}    
+
+.experience {
+    position: absolute;
+    margin-left: 25rem;
+    padding: 2rem;
+    text-align: left;
+    font-size: clamp(1rem, 1.7vw, 1rem);
+}    
+
+.experience h6 {
+    margin-top: 2rem;
+    border-bottom: 0.3rem solid var(--mustard-yellow)
+}    
+
+/* PROJECTS SECTION */
+/* `````````````````````````````````````````````````````````` */
+
+#projects {
+    position: relative;
+    /* width: 100vw;
+    height: 70vh; */
+    /* background-image: url("../images/stairs2.png");
+    background-size: 18em;
+    background-repeat: no-repeat;
+    background-position: right top; */
+}
+
+.yellow-stairs {
+    position: absolute;
+    right: 0rem;
+    bottom: 0rem;
+    height: 100%;
+}
 
 .project-box {
+    position: absolute;
     /* list-style: none; */
     display: grid;
     grid-template-columns: repeat(3, 25%);
-    border: 0.3rem solid var(--mustard-yellow);
     justify-content: center;
-    align-items: center;
+    align-items: left;
     margin-top: 10px;
     margin-left: 20px;
-    text-align: left;
+    text-align: center;
 }
 
 .project-box img {
+    border: 0.3rem solid var(--mustard-yellow);
     width: 20rem;
 }
 
+/* SKILLS SECTION */
+/* `````````````````````````````````````````````````````````` */
+
 #skills {
     position: relative;
+}
+
+.redbat-lookaway {
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
+    height: 40%;
 }
 
 #skills .skill-box {
@@ -256,6 +317,9 @@ main section{
     padding: 2rem;
     width: 11rem;
 }
+
+/* CONTACT SECTION */
+/* `````````````````````````````````````````````````````````` */
 
 #contact {
     position: relative;
@@ -287,28 +351,10 @@ main section{
     left:2rem;    
 }
 
-.yellow-stairs {
-    position: absolute;
-    right: 0rem;
-    bottom: 0rem;
-    height: 100%;
-}
-
-.pink-shirt {
-    position: absolute;
-    top: 8rem;
-    left: 5rem;
-    height: 60%;
-}
-
-.redbat-lookaway {
-    position: absolute;
-    bottom: 0rem;
-    right: 0rem;
-    height: 40%;
-}
 
 /* media queries for responsiveness */
+/* `````````````````````````````````````````````````````````` */
+
 @media screen and (max-width:950px) {
 
     html{
@@ -352,11 +398,6 @@ main section{
         place-items: center;
     }
 
-    
-
-}
-@media screen and (max-width:950px) {
-
     main {
         height:100%;
     }
@@ -377,10 +418,11 @@ main section{
         left: 0%;
     }
 
-    body {
+    /* body {
         padding:0%;
-    }
-    header .nav-bar ul {
+    } */
+
+    #nav-bar ul {
         display: block;
         margin: 50px;
     }
@@ -392,10 +434,6 @@ main section{
     header .nav-bar ul li a{
         width: 35vw;
     }
-
-    /* #about {
-        height: 100vh
-    } */
 
 }
 
