@@ -244,10 +244,10 @@ main section{
 
 .experience {
     position: absolute;
-    margin-left: 25rem;
+    margin-left: 30rem;
     padding: 2rem;
     text-align: left;
-    font-size: clamp(1rem, 1.7vw, 1rem);
+    font-size: clamp(1.23rem, 2.7vw, 1rem);
 }    
 
 .experience h6 {
@@ -297,13 +297,17 @@ main section{
 
 #skills {
     position: relative;
+    /* background-image: url("../images/redbat-lookaway.png");
+    background-size: 18em;
+    background-repeat: no-repeat;
+    background-position: right bottom; */
 }
 
 .redbat-lookaway {
     position: absolute;
     bottom: 0rem;
     right: 0rem;
-    height: 40%;
+    height: 50%;
 }
 
 #skills .skill-box {
@@ -366,13 +370,33 @@ main section{
         background: var(--cream-white);
     }
 
+    main section {
+        height: 100vh;
+    }
+    
     section{
+        /* height: 100vh; */
         padding:2rem 1rem;
         margin-top: 5rem;
     }
 
+    .experience {
+        margin-left: 0rem;
+    }
+
+    #skills {
+        background-image: url("../images/redbat-lookaway.png");
+        background-size: 18em;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+    }
+
     #skills ul{
         grid-template-columns: repeat(2, 150px);
+    }
+
+    #skills .skill-box {
+        grid-template-columns: repeat(auto-fill, 150px);
     }
 
     #skills ul img{
@@ -390,13 +414,13 @@ main section{
         right: 0%;
     }
 
-    .redbat-lookaway {
-        /* position: absolute; */
+    /* .redbat-lookaway {
+        position: absolute;
         bottom: 0rem;
-        /* right: 0rem; */
-        height: 30%;
+        right: 0rem;
+        height: 0%;
         place-items: center;
-    }
+    } */
 
     main {
         height:100%;
