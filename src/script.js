@@ -30,7 +30,7 @@ $(document).ready(function () {
         $('header').removeClass('header-on')
     });
     
-    $('#nav-bar a').click(function () {
+    $('#nav-bar ul li a').click(function () {
         $(this).addClass('active').siblings().removeClass('active')
     })
 
