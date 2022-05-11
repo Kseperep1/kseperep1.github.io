@@ -30,11 +30,11 @@ html {
     left: 0;
     z-index: 1;
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
+    background: var(--cream-white);
 }
 
 body {
-    /* background: var(--cream-white); */
     position: relative;
     height: 100vh;
     /* padding-top: 15rem; */
@@ -97,7 +97,7 @@ header {
     border-radius: 15px 50px;
 }
 
-#nav-bar ul li a.active{
+#nav-bar .active{
     background: var(--mustard-yellow);
     color: var(--black)
 }

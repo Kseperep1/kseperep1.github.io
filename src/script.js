@@ -30,8 +30,13 @@ $(document).ready(function () {
         $('header').removeClass('header-on')
     });
     
-    $('#nav-bar ul li a').click(function () {
-        $(this).addClass('active').siblings().removeClass('active')
+    // $('#nav-bar a').click(function () {
+    //     $(this).addClass('active').siblings().removeClass('active');
+    // });
+
+    $('#nav-bar a').on('click', function (){
+        $(this).addClass('active').siblings().removeClass('active');
+        
     })
 
 });
