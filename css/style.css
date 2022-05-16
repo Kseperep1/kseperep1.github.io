@@ -76,7 +76,7 @@ header.header-on {
 
 #nav-bar ul {
     list-style: none;
-    display: flex;
+
     padding: 3px, 5px;
     transition: all 0.4s;
 }
@@ -92,12 +92,12 @@ header.header-on {
 }
 
 #nav-bar ul li a.active{
-    background: var(--mustard-yellow);
+    background: var(--blue);
     color: var(--black)
 }
 
 #nav-bar ul li a:hover {
-    background: var(--mustard-yellow);
+    background: var(--blue);
     transform: scale(1.1);
     color: var(--some-grey);
 }
