@@ -373,7 +373,7 @@ main h1 {
     }
 
     .logo img {
-        height: 120px;
+        height: 90px;
     }
 
     main {
@@ -400,6 +400,10 @@ main h1 {
         right: 70px;
     }
 
+    #skills {
+        margin: 3rem;
+    }
+
     #skills .skill-box img {
         padding: 1.5rem;
         width: 9rem;
@@ -407,7 +411,15 @@ main h1 {
 
     #skills .skill-box {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+
+    #career {
+        margin: 3rem;
+    }
+
+    #contact .lookaway img {
+        display: none;
     }
 
 }
