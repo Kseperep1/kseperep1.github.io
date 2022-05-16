@@ -1,157 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="css/style.css">
-    <title>Portfolio</title>
-</head>
+        <link rel="stylesheet" href="../css/styles.css">
+        <title>Portfolio</title>
+    </head>
 
-<body>
-    <header>
-        <div id="user">
-            <img src="images/profile.jpg" alt="A picture of myself">
-            <h3 class="name">Kamogelo Seperepere</h3>
-            <p class="career">Software Developer</p>
-        </div>
-        <nav id="nav-bar">
-            <ul>
-                <li><a class="active" href="#about">About Me</a></li>
-                <li><a href="#education">My Experience</a></li>
-                <li><a href="#projects">My Projects</a></li>
-                <li><a href="#skills">My Skills</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div id="nav-menu" class="fa fa-bars" aria-hidden="true"></div>
-
-    <main>
-        <section id="about">
-            <img class="yellow-crate" src="images/yellow-crate(2).png" alt="yellow crate and my face">
-            <!-- <div class="yellow-crate"></div> -->
-            <h1>About Me!</h1>
-            
-            <p><span>Hi!</span> My name is Kamogelo, but people call me Kamo. I am a software developer, 
-                eager to investigate new cutting-edge technologies, collaborate and 
-                build networks with a diverse range of people.
-                <br>
-                <br>
-                With an interest in building web and software-based systems 
-                that are technologically innovative, I chose to pursue software 
-                engineering to gain a greater understanding of both software 
-                development and data research.</p>
-
-                <a href="resume/Kamogelo-Resume.pdf" download ><button id="btnDownload"> Download my CV<i class="fa fa-download"></i></button></a>
-        </section>
-
-        <section id="education">
-            <img class="pink-shirt" src="images/pink-shirt.png" alt="Myself wearing a pink shirt">
-            <h1>My Experience!</h1>
-
-            <div class="experience">
-                <h6>2012 - 2016</h6>
-                <h4>Midrand High School, Midrand </h4>
+    <body>
+        <header>
+            <div id="user">
+                <img src="../images/Kamo_white-removebg.png" alt="A picture of my logo">
+                <h3 class="name">Kamogelo Seperepere</h3>
+                <p class="career">Software Developer</p>
+            </div>
+            <nav id="nav-bar">
                 <ul>
-                    <li>- Matriculated in 2016</li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#career">Career</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-                
-                <h6>FEB 2020 - JUL 2020</h6>
-                <h4>BBD Software Company, Johanesburg <h5>Intern Software Developer</h5></h4>
-                <ul>
-                    <li>- Contractor at Vodacom</li>
-                    <li>- Served as a dedicated and supportive intern in a fast-paced environment. </li>
-                    <li>- Collaborated in a team by integrating various web-based projects in an agile environment.</li>
-                    <li>- Code up-skilling using the T-shaped skills approach.</li>
-                </ul>
+            </nav>
+        </header>
+
+        
+        <main>
+            <div class="logo">
+                <img src="../images/Kamo_white-removebg.png" alt="A picture of my logo">
             </div>
+
+            <div id="nav-menu" class="fa fa-bars" aria-hidden="true"></div>
             
+            <section id="about">
+                <h1>About Me!</h1>
+
+                <div class="content">
+                    <p><span>Hi!</span> My name is Kamogelo, but people call me Kamo. I am a software developer, 
+                        eager to investigate new cutting-edge technologies, collaborate and 
+                        build networks with a diverse range of people.
+                        <br>
+                        <br>
+                        With an interest in building web and software-based systems 
+                        that are technologically innovative, I chose to pursue software 
+                        engineering to gain a greater understanding of both software 
+                        development and data research.
+                    </p>
         
-        </section>
-        
-        <section id="projects">
-            <img class="yellow-stairs" src="images/stairs2.png " alt="Myself at the yellow stairs">
-            <h1>Projects!</h1>
-            
-            <div class="project-box">
-                <h4>Portfolio</h4>
-                
-                <a href="https://github.com/Kseperep1/kseperep1.github.io">
-                <img class="portfolio" src="images/Portfolio.png " alt="My personal website"></a>
-
-                <p>add a button below picture for link to (My github code)</p>
-            </div>
-
-        </section>
-        
-        <section id="skills">
-            <img class="redbat-lookaway" src="images/redbat-lookaway.png " alt="Myself with a grey sweatshirt">
-            <h1>My Skills!</h1>
-
-            <div class="skill-box">
-                <img src="logos/microsoft-office.png" alt="microsoft office">
-
-                <img src="logos/c-programming-icon.png" alt="c-programming-icon">
-                
-                <img src="logos/Git-Logo-2Color.png" alt="git-icon">
-                
-                <img src="logos/PHP-logo.svg.png" alt="php icon">
-                
-                <img src="logos/mysql.png" alt="MySql icon">
-                
-                <img src="logos/javascript2.png" alt="javascript logo">
-                
-                <img src="logos/html2.png" alt="html5">
-                
-                <img src="logos/css32.png" alt="css icon">
-                
-                <img src="logos/jquery.png" alt="jquery">
-                
-                <img src="logos/jasmine-1-logo.png" alt="jasmine">
-            </div>
-        </section>
-        
-        <section id="contact">
-            <img class="white-shirt" src="images/white-shirt.png" alt="yellow telephone">
-            <img class="dangling-telephone" src="images/dangling-telephone.png" alt="dangling red telephone">
-            <h1>Contact Me!</h1>
-            <ul>
-                <div class="contact-box">
-                    <a href="https://www.facebook.com/Kamogelo.Seperepere/">
-                        <img src="logos/facebook.png" alt="facebook-link"></a>
-
-                    <a href="https://www.linkedin.com/in/kamogelo-seperepere">
-                        <img src="logos/linkedIn.png" alt="linkedin-link"></a>
-
-                    <a href="https://wa.link/ob19yz">
-                        <img src="logos/whatsapp.png" alt="whatsapp-link">
-
-                    <a href="https://github.com/Kseperep1">
-                        <img src="logos/github.png" alt="git-link"></a>
-                    
-                    <a href="https://www.instagram.com/tha_boyz_cookin/">
-                        <img src="logos/instagram.png" alt="instagram-link"></a>
                 </div>
-            </ul>
-        </section>
+                    <a href="resume/Kamogelo-Resume.pdf" download >
+                        <button id="btnDownload"> Download my CV<i class="fa fa-download"></i></button>
+                    </a>
 
-    </main>
+                <img src="../images/redbat-look.png" alt="myself">
+                
+            </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" 
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" 
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-    </script>
+            <section id="career">
+                <h1>My Career Highlights!</h1>
+                <div class="experience">
+                    <h6>2012 - 2016</h6>
+                    <h4>Midrand High School, Midrand </h4>
+                    
+                    <h6>FEB 2020 - JUL 2020</h6>
+                    <h4>BBD Software Company, Johanesburg <h5>Intern Software Developer</h5></h4>
+                </div>
+            </section>
 
-    <script src="src/script.js"></script>
+            <section id="projects">
+                <h1>My Projects</h1>
+                <img src="../images/white-shirt.png " alt="myself">
+                <div class="my-work">
+                    <p>coming soon</p>
+                </div>
+            </section>
+            
+            <section id="skills">
+                <h1>My Skills!</h1>
 
-</body>
+                <div class="skill-box">
+                    <img src="logos/microsoft-office.png" alt="microsoft office">
+    
+                    <img src="logos/c-programming-icon.png" alt="c-programming-icon">
+                    
+                    <img src="logos/Git-Logo-White.png" alt="git-icon">
+                    
+                    <img src="logos/PHP-logo.svg.png" alt="php icon">
+                    
+                    <img src="logos/mysql.png" alt="MySql icon">
+                    
+                    <img src="logos/javascript2.png" alt="javascript logo">
+                    
+                    <img src="logos/html2.png" alt="html5">
+                    
+                    <img src="logos/css32.png" alt="css icon">
+                    
+                    <img src="logos/jquery.png" alt="jquery">
+                    
+                    <img src="logos/jasmine-1-logo.png" alt="jasmine">
+                </div>
+
+            </section>
+            
+            <section id="contact">
+                <h1>Contact Me!</h1>
+
+                <div class="content2">
+
+                    <h2>Call Me at : 061 421 6476</h2>
+                    <!-- <p>Kamogelo Seperepere</p> -->
+                    <p>Kamogelo40@gmail.com</p>
+
+                </div>
+                    <div class="contact-box">
+                        <a href="https://www.facebook.com/Kamogelo.Seperepere/">
+                            <img src="logos/facebook.png" alt="facebook-link"></a>
+
+                        <a href="https://www.linkedin.com/in/kamogelo-seperepere">
+                            <img src="logos/linkedIn.png" alt="linkedin-link"></a>
+                            
+                        <a href="https://wa.link/ob19yz">
+                        <img src="logos/whatsapp.png" alt="whatsapp-link">
+                        
+                        <a href="https://github.com/Kseperep1">
+                        <img src="logos/github-white.png" alt="git-link"></a>
+                        
+                        <a href="https://www.instagram.com/tha_boyz_cookin/">
+                            <img src="logos/instagram.png" alt="instagram-link"></a>
+                    </div>
+                        
+                <img src="../images/redbat-lookaway1.png" alt="grey hoodie myself">
+
+            </section>
+
+        </main>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" 
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+
+        <script src="src/script.js"></script>
+
+    </body>
 
 </html>
-
