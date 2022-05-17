@@ -17,7 +17,6 @@
 * {
     font-family: 'Roboto Slab', serif;
     margin: 0px;
-    /* margin-bottom: 2rem; */
     padding: 0px;
     box-sizing: border-box;
     text-decoration: none;
@@ -134,7 +133,6 @@ main {
     height: 100%;
     color: var(--white);
     display: grid;
-    /* position: relative; */
     grid-gap: 3px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
@@ -154,32 +152,26 @@ main h1 {
     text-transform: uppercase;
     text-align: center;
     border-bottom: 2px solid var(--blue);
-    /* grid-column: 1 / -1; */
 }
 
 .logo {
     grid-area: h;
-    /* grid-column: 2; */
     justify-content: center;
     align-items: center;
 }
 
 .logo img {
     height: 100px;
-    /* width: 100px; */
 }
 
 #nav-menu {
     grid-area: h;
     position: fixed;
-    /* grid-column: 27; */
     top: 35px;
     right: 150px;
     color: var(--white);
-    /* border-radius: 50%; */
     cursor: pointer;
     font-size: 25px;
-    /* padding: 10px 15px; */
     z-index: 1000;;
 }
 
@@ -190,9 +182,7 @@ main h1 {
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 #about {
-    /* position: relative; */
     grid-area: a;
-    /* height: 600px; */
     display: grid;
     border-radius: 15px 50px;
     background-color: var(--some-grey);
@@ -218,6 +208,7 @@ main h1 {
     align-items: center;
 }
 
+
 .content p {
     font-size: 18px;
 }
@@ -233,7 +224,6 @@ main h1 {
     grid-area: ro;
     grid-column: 2;
     grid-row: 2;
-    /* position: absolute; */
     bottom: 0%;
     right: 0%;
     width: 145px;
@@ -242,11 +232,9 @@ main h1 {
     font-size: 1rem;
     border-radius: 15px 50px;
     background: var(--blue);
-    /* background: #333; */
     align-items: center;
     color: white;
     cursor: pointer;
-    /* float: left; */
 }
 
 #btnDownload i {
@@ -263,15 +251,6 @@ main h1 {
 #career {
     grid-area: c;
     margin: 80px;
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-template-areas:
-    "car car"
-    "con con";
-    justify-content: center;
-    align-items: center;
-    margin: 6rem; */
 }
 
 #career h1 {
@@ -282,9 +261,9 @@ main h1 {
     grid-area: con;
 }
 
-#career h6 {
+#career h4 {
     margin-top: 2.5rem;
-    border-bottom: 0.3rem solid var(--blue);
+    /* border-bottom: 0.3rem solid var(--blue); */
 }
 
 /* PROJECTS */
@@ -294,7 +273,6 @@ main h1 {
 
 #projects {
     grid-area: p;
-    /* padding: 80px; */
     display: grid;
     border-radius: 15px 50px;
     background-color: var(--some-grey);
@@ -314,9 +292,7 @@ main h1 {
     grid-area: wh;
     width: 75%;
     padding-left: 15%;
-    /* justify-content: center; */
     height: auto;
-    /* bottom: 0%; */
 }
 
 .my-work {
@@ -369,7 +345,6 @@ main h1 {
     display: grid;
     border-radius: 15px 50px;
     background-color: var(--some-grey);
-    /* padding-bottom: 2rem; */
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 150px;
     grid-template-areas:
@@ -379,9 +354,7 @@ main h1 {
 }
 
 #contact h1 {
-    /* grid-row: 1; */
     grid-column: 1 / -1;
-    /* grid-area: cm; */
     height: 60px;
 }
 
@@ -392,6 +365,9 @@ main h1 {
     align-items: center;
 }
 
+#contact .content2 i {
+    margin: 10px;
+}
 
 /* #contact h2 p {
 
@@ -399,11 +375,9 @@ main h1 {
 
 .social-box {
     grid-area: di;
-    /* list-style: none; */
     display: grid;
     grid-template-columns: repeat(auto-fill, 100px);
     grid-template-rows: 70px;
-    /* margin-left: 20px; */
 }
 
 .social-box img {
@@ -417,7 +391,6 @@ main h1 {
 }
 
 #lookaway {
-    /* grid-column: 5 / -1; */
     grid-area: rla;
     width: 60%;
     height: auto;
