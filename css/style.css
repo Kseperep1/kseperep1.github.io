@@ -532,10 +532,10 @@ footer {
 
     #contact {
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 100px 120px 200px;
+        grid-template-rows: 100px auto auto;
         grid-template-areas:
             "cm cm cm cm cm cm"
-            ". ic ic ic ic ."
+            "ic ic ic ic ic ic"
             "di di di di di di";
     }
 
