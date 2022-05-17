@@ -53,6 +53,11 @@ body {
     overflow-x: hidden;
 }
 
+/* MAIN */
+/* ````````````````````````````````````````````````````````````` */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
 header {
     position: fixed;
     background-color: var(--sky-blue);
@@ -87,8 +92,8 @@ header.header-on {
 }
 
 #user .career {
-    font-size: 13px;
-    color: var(--light-grey);
+    font-size: 15px;
+    color: var(--white);
     padding: 8px;
 }
 
@@ -105,7 +110,7 @@ header.header-on {
     padding: 6px;
     width: 130px;
     margin: 10px 15px;
-    font-size: 15px;
+    font-size: 18px;
     border-radius: 15px 50px;
 }
 
@@ -120,13 +125,10 @@ header.header-on {
     color: var(--white);
 }
 
-
-/* NAV-MENU */
-/* `````````````````````````````````````````````````````````` */
-
-
 /* MAIN */
 /* ````````````````````````````````````````````````````````````` */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 main {
     height: 100%;
@@ -137,13 +139,13 @@ main {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
-    "h h h h h h h h h h h h"
+    ". h h h h h h h h h h h"
     ". a a a a a a a a a a ."
     ". . c c c c c c c c . ."
     ". p p p p p p p p p p ."
     ". . s s s s s s s s . ."
     ". m m m m m m m m m m ."
-    "f f f f f f f f f f f f";
+    ". . . . . f f . . . . .";
 }
 
 main h1 {
@@ -181,6 +183,12 @@ main h1 {
     z-index: 1000;;
 }
 
+
+/* ABOUT */
+/* `````````````````````````````````````````````````````````` */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
 #about {
     /* position: relative; */
     grid-area: a;
@@ -190,15 +198,11 @@ main h1 {
     background-color: var(--some-grey);
     
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-rows: auto;
     grid-template-areas:
     "ab ab ab ab"
     "co co rl rl"
     "ro ro rl rl";
-    /* background-image: url("../images/redbat-look.png");
-    background-size: 50em;
-    background-repeat: no-repeat;
-    background-position: right bottom;  */
 }
 
 #about h1 {
@@ -209,9 +213,13 @@ main h1 {
 .content {
     float: left;
     grid-area: co;
-    padding: 50px;
+    padding: 30px 50px;
     justify-content: center;
     align-items: center;
+}
+
+.content p {
+    font-size: 18px;
 }
 
 #about img{
@@ -231,7 +239,7 @@ main h1 {
     width: 145px;
     padding: 6px;
     margin: 10px 50px;
-    font-size: 10px;
+    font-size: 1rem;
     border-radius: 15px 50px;
     background: var(--blue);
     /* background: #333; */
@@ -247,19 +255,42 @@ main h1 {
     font-size: 1rem;
 }
 
+/* CAREER */
+/* `````````````````````````````````````````````````````````` */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
 #career {
     grid-area: c;
-    /* margin: 80px; */
+    margin: 80px;
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "car car"
+    "con con";
     justify-content: center;
     align-items: center;
-    margin: 6rem;
+    margin: 6rem; */
 }
 
+#career h1 {
+    grid-area: car;
+}
+
+.career-box {
+    grid-area: con;
+}
 
 #career h6 {
     margin-top: 2.5rem;
     border-bottom: 0.3rem solid var(--blue);
 }
+
+/* PROJECTS */
+/* `````````````````````````````````````````````````````````` */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 #projects {
     grid-area: p;
@@ -271,7 +302,7 @@ main h1 {
     grid-template-rows: 150px;
     grid-template-areas:
     "pr pr pr pr pr pr pr pr"
-    "wh wh wh wh mp mp mp mp";
+    "wh wh wh mp mp mp mp mp";
 }
 
 #projects h1 {
@@ -281,7 +312,7 @@ main h1 {
 
 #projects img {
     grid-area: wh;
-    width: 60%;
+    width: 75%;
     padding-left: 15%;
     /* justify-content: center; */
     height: auto;
@@ -291,8 +322,8 @@ main h1 {
 .my-work {
     grid-area: mp;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 200px);
-    grid-template-rows: 200px;
+    grid-template-columns: repeat(auto-fill, 180px);
+    grid-template-rows: 180px;
 }
 
 .my-work p {
@@ -301,6 +332,11 @@ main h1 {
     border: 0.2em solid var(--blue)
     
 }
+
+/* SKILLS */
+/* `````````````````````````````````````````````````````````` */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 #skills {
     margin: 80px;
@@ -322,6 +358,11 @@ main h1 {
     padding: 2rem;
     width: 11rem;
 }
+
+/* CONTACT */
+/* `````````````````````````````````````````````````````````` */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 #contact {
     grid-area: m;
@@ -345,8 +386,6 @@ main h1 {
 }
 
 #contact .content2 {
-    /* grid-column: 1 / 4; */
-    /* padding: 20px; */
     margin-top: 2rem;
     grid-area: ic;
     justify-content: center;
@@ -358,31 +397,40 @@ main h1 {
 
 } */
 
-.contact-box {
+.social-box {
     grid-area: di;
     /* list-style: none; */
     display: grid;
-    grid-template-columns: repeat(auto-fit, 100px);
+    grid-template-columns: repeat(auto-fill, 100px);
     grid-template-rows: 70px;
     /* margin-left: 20px; */
 }
 
-.contact-box img {
-    grid-area: ic;
-    width: 40%;
+.social-box img {
+    width: 75%;
     height: auto;
     float: center;
 }
 
-#contact img {
+.social-box img:hover {
+    transform: scale(1.4);
+}
+
+#lookaway {
     /* grid-column: 5 / -1; */
     grid-area: rla;
     width: 60%;
     height: auto;
 }
 
+/* FOOTER */
+/* `````````````````````````````````````````````````````````` */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
 footer {
     grid-area: f;
+    grid-column: 1 / -1;
     color: var(--light-grey);
     justify-content: center;
     align-items: center;
@@ -391,20 +439,45 @@ footer {
     margin: 2rem;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* media queries for responsiveness */
 /* `````````````````````````````````````````````````````````` */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-@media screen and (max-width:650px) {
-
-    #user img {
-        height: 120px;
-        width: 120px;
+@media screen and (max-width:900px) {
+    
+    #skills .skill-box {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
     }
 
-    .logo img {
-        height: 90px;
-    }
+}
 
+
+@media screen and (max-width:720px) {
+    
+    /* MEDIA MAIN
+    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    
     main {
         grid-template-areas:
         "h h h h h h h h h h h h"
@@ -412,23 +485,62 @@ footer {
         ". c c c c c c c c c c ."
         ". p p p p p p p p p p ."
         ". s s s s s s s s s s ."
-        ". m m m m m m m m m m .";
+        ". m m m m m m m m m m ."
+        ". . . . . f f . . . . .";
+    }
+
+    .logo img {
+        height: 90px;
+    }
+
+    /* MEDIA HEADER
+    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    
+    #user img {
+        height: auto;
+        width: 120px;
+    }
+    
+    #nav-menu {
+        right: 70px;
+    }
+
+    /* MEDIA ABOUT
+    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    
+    #about {
+        grid-template-areas:
+        "ab ab ab ab"
+        "co co co co"
+        ". rl rl .";
     }
 
     #about img {
         display: none;
     }
-
-    #about {
-        grid-template-areas:
-        "ab ab ab ab"
-        "co co co co";
+    
+    /* MEDIA CAREER
+    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    
+    #career {
+        margin: 3rem;
     }
 
-    #nav-menu {
-        right: 70px;
+    .my-work {
+        grid-template-columns: repeat(auto-fill, 130px);
+        grid-template-rows: 130px;
+        justify-content: left;
+        align-items: inherit; 
     }
+    
+    /* MEDIA PROJECTS
+    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    
+    
 
+    /* MEDIA SKILLS
+    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    
     #skills {
         margin: 3rem;
     }
@@ -439,16 +551,54 @@ footer {
     }
 
     #skills .skill-box {
-        display: grid;
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     }
+    
+    /* MEDIA CONTACT
+    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-    #career {
-        margin: 3rem;
+    #contact {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 100px 120px 200px;
+        grid-template-areas:
+            "cm cm cm cm cm cm"
+            ". ic ic ic ic ."
+            "di di di di di di";
     }
 
-    #contact .lookaway img {
+    #contact .content2 {
+        text-align: center;
+    }
+
+    #lookaway {
         display: none;
     }
 
+    .social-box {
+        grid-template-columns: repeat(auto-fit, 75px);
+        grid-template-rows: 65px;
+        margin: 1rem;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+}
+
+@media screen and (max-width:450px) {
+    
+    #projects {
+    grid-template-rows: 100px 150px;
+    grid-template-areas:
+        "pr pr pr pr pr pr pr pr"
+        "mp mp mp mp mp mp mp mp";
+    }
+    
+    #projects img {
+        display: none;
+    }
+
+    .my-work {
+        grid-template-columns: repeat(auto-fill, 110px);
+        grid-template-rows: 110px;
+    }
 }
