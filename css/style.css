@@ -11,6 +11,7 @@
     --some-grey: rgba(80, 79, 79, 0.234);
     --black: hsl(0, 4%, 5%);
     --blue : rgb(0, 187, 255);
+    --sky-blue: rgb(62 139 213 / 70%)
 }
 
 * {
@@ -36,14 +37,31 @@ html, body, main, section {
     height: 100%;
 }
 
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: var(--black);
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--sky-blue);
+}
+
+body {
+    overflow-x: hidden;
+}
+
 header {
     position: fixed;
-    background-color: var(--some-grey);
+    background-color: var(--sky-blue);
+    backdrop-filter: blur(2.3px);
     left: -120%;
     z-index: 1000;
     height: 100%;
-    width: 350px;
-    display: block;
+    width: 300px;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: column;
@@ -97,9 +115,9 @@ header.header-on {
 }
 
 #nav-bar ul li a:hover {
-    background: var(--blue);
+    background: var(--some-black);
     transform: scale(1.1);
-    color: var(--some-grey);
+    color: var(--white);
 }
 
 
@@ -124,7 +142,8 @@ main {
     ". . c c c c c c c c . ."
     ". p p p p p p p p p p ."
     ". . s s s s s s s s . ."
-    ". m m m m m m m m m m .";
+    ". m m m m m m m m m m ."
+    "f f f f f f f f f f f f";
 }
 
 main h1 {
@@ -138,7 +157,7 @@ main h1 {
 
 .logo {
     grid-area: h;
-    grid-column: 2;
+    /* grid-column: 2; */
     justify-content: center;
     align-items: center;
 }
@@ -348,7 +367,7 @@ main h1 {
     /* margin-left: 20px; */
 }
 
-.contact-box img{
+.contact-box img {
     grid-area: ic;
     width: 40%;
     height: auto;
@@ -360,6 +379,16 @@ main h1 {
     grid-area: rla;
     width: 60%;
     height: auto;
+}
+
+footer {
+    grid-area: f;
+    color: var(--light-grey);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60px;
+    margin: 2rem;
 }
 
 /* media queries for responsiveness */
