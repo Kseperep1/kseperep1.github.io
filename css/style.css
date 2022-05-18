@@ -197,7 +197,7 @@ main h1 {
 
 #about h1 {
     grid-area: ab;
-    height: 40px;
+    height: 60px;
 }
 
 .content {
@@ -255,6 +255,7 @@ main h1 {
 
 #career h1 {
     grid-area: car;
+    height: 60px;
 }
 
 .career-box {
@@ -285,7 +286,7 @@ main h1 {
 
 #projects h1 {
     grid-area: pr;
-    height: 40px;
+    height: 60px;
 }
 
 #projects img {
@@ -320,7 +321,7 @@ main h1 {
 }
 
 #skills h1 {
-    height: 40px;
+    height: 60px;
 }
 
 #skills .skill-box {
@@ -354,7 +355,8 @@ main h1 {
 }
 
 #contact h1 {
-    grid-column: 1 / -1;
+    /* grid-column: 1 / -1; */
+    grid-area: cm;
     height: 60px;
 }
 
