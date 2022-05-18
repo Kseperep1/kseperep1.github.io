@@ -154,13 +154,13 @@ main h1 {
     border-bottom: 2px solid var(--blue);
 }
 
-.logo {
+#logo {
     grid-area: h;
     justify-content: center;
     align-items: center;
 }
 
-.logo img {
+#logo img {
     height: 100px;
 }
 
@@ -472,7 +472,7 @@ footer {
         ". . . . . f f . . . . .";
     }
 
-    .logo img {
+    #logo img {
         height: 90px;
     }
 
