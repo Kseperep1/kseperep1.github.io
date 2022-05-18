@@ -278,7 +278,7 @@ main h1 {
     border-radius: 15px 50px;
     background-color: var(--some-grey);
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: 150px;
+    grid-template-rows: 100px auto;
     grid-template-areas:
     "pr pr pr pr pr pr pr pr"
     "wh wh wh mp mp mp mp mp";
@@ -289,24 +289,32 @@ main h1 {
     height: 60px;
 }
 
-#projects img {
+#white-img {
     grid-area: wh;
-    width: 75%;
+    width: 70%;
     padding-left: 15%;
     height: auto;
 }
 
-.my-work {
+.my-work  {
     grid-area: mp;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 180px);
-    grid-template-rows: 180px;
+    margin-top: 30px;
+    grid-template-areas:
+    ". pi pi pi pi";
 }
+
+#project-img {
+    grid-area: pi;
+    border: 0.2em solid var(--blue);
+    object-fit: cover;
+    height: 100px;
+}
+
 
 .my-work p {
     margin: 15px;
     padding: 3%;
-    border: 0.2em solid var(--blue)
     
 }
 
@@ -503,9 +511,10 @@ footer {
 
     .my-work {
         grid-template-columns: repeat(auto-fill, 130px);
-        grid-template-rows: 130px;
+        grid-template-rows: 120px;
         justify-content: left;
-        align-items: inherit; 
+        align-items: inherit;
+        grid-template-areas: "pi pi pi pi .";
     }
     
     /* MEDIA PROJECTS
@@ -568,12 +577,14 @@ footer {
         "mp mp mp mp mp mp mp mp";
     }
     
-    #projects img {
+    #white-img {
         display: none;
     }
 
     .my-work {
         grid-template-columns: repeat(auto-fill, 110px);
         grid-template-rows: 110px;
+        
+        grid-template-areas: ". pi pi pi pi";
     }
 }
