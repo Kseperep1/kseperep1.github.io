@@ -223,18 +223,18 @@ main h1 {
 #btnDownload {
     grid-area: ro;
     grid-column: 2;
-    grid-row: 2;
-    bottom: 0%;
-    right: 0%;
     width: 145px;
     padding: 6px;
-    margin: 10px 50px;
+    margin: 20px 60px;
     font-size: 1rem;
     border-radius: 15px 50px;
     background: var(--blue);
-    align-items: center;
     color: white;
     cursor: pointer;
+}
+
+#btnDownload:hover {
+    transform: scale(1.1);
 }
 
 #btnDownload i {
@@ -264,7 +264,6 @@ main h1 {
 
 #career h4 {
     margin-top: 2.5rem;
-    /* border-bottom: 0.3rem solid var(--blue); */
 }
 
 /* PROJECTS */
