@@ -362,7 +362,6 @@ main h1 {
 }
 
 #contact h1 {
-    /* grid-column: 1 / -1; */
     grid-area: cm;
     height: 60px;
 }
@@ -377,10 +376,6 @@ main h1 {
 #contact .content2 i {
     margin: 10px;
 }
-
-/* #contact h2 p {
-
-} */
 
 .social-box {
     grid-area: di;
