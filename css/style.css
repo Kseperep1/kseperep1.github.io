@@ -187,7 +187,7 @@ main h1 {
     border-radius: 15px 50px;
     background-color: var(--some-grey);
     
-    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: repeat(4, 1fr); */
     grid-template-rows: auto;
     grid-template-areas:
     "ab ab ab ab"
@@ -280,7 +280,7 @@ main h1 {
     grid-template-rows: 100px auto;
     grid-template-areas:
     "pr pr pr pr pr pr pr pr"
-    "wh wh wh mp mp mp mp mp";
+    "wh wh wh wh mp mp mp mp";
 }
 
 #projects h1 {
@@ -290,8 +290,8 @@ main h1 {
 
 #white-img {
     grid-area: wh;
-    width: 70%;
-    padding-left: 15%;
+    width: 60%;
+    padding: 5% 0 0 15%;
     height: auto;
 }
 
@@ -486,10 +486,11 @@ footer {
     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
     
     #about {
-        grid-template-areas:
+        grid-template-columns: 1fr;
+        /* grid-template-areas:
         "ab ab ab ab"
         "co co co co"
-        ". rl rl .";
+        ". rl rl ."; */
     }
 
     #about img {
@@ -504,11 +505,11 @@ footer {
     }
 
     .my-work {
-        grid-template-columns: repeat(auto-fill, 130px);
+        /* grid-template-columns: repeat(auto-fill, 130px); */
         grid-template-rows: 120px;
-        justify-content: left;
+        /* justify-content: left;
         align-items: inherit;
-        grid-template-areas: "pi pi pi pi .";
+        grid-template-areas: "pi pi pi pi ."; */
     }
     
     /* MEDIA PROJECTS
@@ -576,9 +577,7 @@ footer {
     }
 
     .my-work {
-        grid-template-columns: repeat(auto-fill, 110px);
         grid-template-rows: 110px;
-        
-        grid-template-areas: ". pi pi pi pi";
+        justify-content: center;
     }
 }
