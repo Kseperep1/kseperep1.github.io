@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;500&display=swap');
 
 :root {
-    /* --mustard-yellow: #96ceb4; */
     --mustard-yellow: #e4c63e;
     --light-grey: rgb(199, 199, 199);
-    /* --cream-white: #96ceb4; */
     --cream-white: #F7F4E9;
     --white: white;
     --some-black: #1a1a1a;
@@ -186,8 +184,7 @@ main h1 {
     display: grid;
     border-radius: 15px 50px;
     background-color: var(--some-grey);
-    
-    /* grid-template-columns: repeat(4, 1fr); */
+
     grid-template-rows: auto;
     grid-template-areas:
     "ab ab ab ab"
@@ -454,17 +451,6 @@ footer {
     
     /* MEDIA MAIN
     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-    
-    /* main {
-        grid-template-areas:
-        "h h h h h h h h h h h h"
-        ". a a a a a a a a a a ."
-        ". c c c c c c c c c c ."
-        ". p p p p p p p p p p ."
-        ". s s s s s s s s s s ."
-        ". m m m m m m m m m m ."
-        ". . . . . f f . . . . .";
-    } */
 
     #logo img {
         height: 90px;
@@ -487,10 +473,6 @@ footer {
     
     #about {
         grid-template-columns: 1fr;
-        /* grid-template-areas:
-        "ab ab ab ab"
-        "co co co co"
-        ". rl rl ."; */
     }
 
     #about img {
@@ -505,11 +487,7 @@ footer {
     }
 
     .my-work {
-        /* grid-template-columns: repeat(auto-fill, 130px); */
         grid-template-rows: 120px;
-        /* justify-content: left;
-        align-items: inherit;
-        grid-template-areas: "pi pi pi pi ."; */
     }
     
     /* MEDIA PROJECTS
@@ -564,18 +542,6 @@ footer {
 }
 
 @media screen and (max-width:450px) {
-    
-    /* #main {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-areas:
-            "h h h"
-            ". a ."
-            ". c ."
-            ". p ."
-            ". s ."
-            ". m ."
-            ". f .";
-    } */
     
     #projects {
     grid-template-rows: 100px 150px;
