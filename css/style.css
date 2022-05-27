@@ -455,7 +455,7 @@ footer {
     /* MEDIA MAIN
     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
     
-    main {
+    /* main {
         grid-template-areas:
         "h h h h h h h h h h h h"
         ". a a a a a a a a a a ."
@@ -464,7 +464,7 @@ footer {
         ". s s s s s s s s s s ."
         ". m m m m m m m m m m ."
         ". . . . . f f . . . . .";
-    }
+    } */
 
     #logo img {
         height: 90px;
@@ -565,6 +565,18 @@ footer {
 
 @media screen and (max-width:450px) {
     
+    /* #main {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "h h h"
+            ". a ."
+            ". c ."
+            ". p ."
+            ". s ."
+            ". m ."
+            ". f .";
+    } */
+    
     #projects {
     grid-template-rows: 100px 150px;
     grid-template-areas:
@@ -579,5 +591,19 @@ footer {
     .my-work {
         grid-template-rows: 110px;
         justify-content: center;
+    }
+}
+
+@media screen and (max-width:350px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "h h h"
+            ". a ."
+            ". c ."
+            ". p ."
+            ". s ."
+            ". m ."
+            ". f .";
     }
 }
