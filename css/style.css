@@ -18,20 +18,12 @@
     padding: 0px;
     box-sizing: border-box;
     text-decoration: none;
-    outline: none;
-    border: none;
     transition: all .2s linear;
-}
-
-*::selection {
-    background-color: var(--blue);
-    color: var(--black);
 }
 
 html, body, main, section {
     scroll-behavior: smooth;
     background-color: var(--black);
-    height: 100%;
 }
 
 html::-webkit-scrollbar {
@@ -58,9 +50,7 @@ body {
 header {
     position: fixed;
     background-color: var(--sky-blue);
-    backdrop-filter: blur(2.3px);
     left: -120%;
-    z-index: 1000;
     height: 100%;
     width: 300px;
     display: flex;
@@ -222,7 +212,7 @@ main h1 {
     grid-column: 2;
     width: 145px;
     padding: 6px;
-    margin: 20px 60px;
+    margin: 60px 60px;
     font-size: 1rem;
     border-radius: 15px 50px;
     background: var(--blue);
@@ -339,6 +329,15 @@ main h1 {
     padding: 2rem;
     width: 11rem;
 }
+
+.picture {
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+}
+.name {
+    text-align: center;
+  }
 
 /* CONTACT */
 /* `````````````````````````````````````````````````````````` */
