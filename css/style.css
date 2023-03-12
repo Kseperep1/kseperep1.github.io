@@ -380,7 +380,6 @@ main h1 {
   grid-column: 6 / 9;
   grid-row: 2 / 4;
   width: 70%;
-  /* height: auto; */
 }
 
 /* FOOTER */
@@ -431,15 +430,9 @@ footer {
     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
   #about {
-    /* grid-template-columns: 1fr; */
-
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 100px auto auto;
   }
-
-  /* #btnDownload {
-    grid-column: 3;
-  } */
 
   #about img {
     display: none;
@@ -504,9 +497,6 @@ footer {
     grid-column: 1 / 6;
     justify-content: center;
     padding: 10% 0 10% 0;
-    /* margin: 1rem;
-    justify-content: center;
-    align-items: flex-start; */
   }
   
   footer {
@@ -542,14 +532,6 @@ footer {
     width: 6rem;
   }
 }
-
-/* @media screen and (max-width: 450px) {
-
-  .my-work {
-    grid-template-rows: 110px;
-    justify-content: center;
-  }
-} */
 
 @media screen and (max-width: 350px) {
   main {
