@@ -116,14 +116,7 @@ header.header-on {
 }
 
 #btnDownload {
-  width: 145px;
-  padding: 6px;
-  margin: 60px 60px;
-  font-size: 1rem;
-  border-radius: 15px 50px;
   background: var(--some-black);
-  color: white;
-  cursor: pointer;
 }
 
 #btnDownload:hover {
@@ -439,17 +432,13 @@ footer {
   #about {
     /* grid-template-columns: 1fr; */
 
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 100px auto auto;
-    grid-template-areas:
-      "ab ab ab ab ab"
-      "co co co co co"
-      "ro ro ro ro ro";
   }
 
-  #btnDownload {
+  /* #btnDownload {
     grid-column: 3;
-  }
+  } */
 
   #about img {
     display: none;
