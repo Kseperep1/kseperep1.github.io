@@ -322,6 +322,7 @@ main h1 {
 
 .word {
   grid-area: word;
+  padding: 1rem;
 }
 
 .name {
@@ -467,11 +468,16 @@ footer {
 
   #skills .skill-box img {
     padding: 1.5rem;
-    width: 9rem;
+    width: 7rem;
   }
 
   #skills .skill-box {
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    padding: 10%;
+  }
+
+  .word {
+    font-size: 13px;
   }
 
   /* MEDIA CONTACT
@@ -520,6 +526,20 @@ footer {
   .my-work {
     grid-column: 3;
     grid-row: 2;
+  }
+
+  #skills .skill-box {
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    padding: 10%;
+  }
+  .pic {
+    height: 120px;
+    width: auto;
+  }
+
+  #skills .skill-box img {
+    padding: 1.5rem;
+    width: 6rem;
   }
 }
 
