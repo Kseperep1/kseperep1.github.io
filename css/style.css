@@ -188,9 +188,9 @@ main h1 {
 
 #about {
   grid-area: a;
-  display: grid;
   border-radius: 15px 50px;
   background-color: var(--some-grey);
+  display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: 150px;
 }
@@ -242,9 +242,9 @@ main h1 {
 
 #projects {
   grid-area: p;
-  display: grid;
   border-radius: 15px 50px;
   background-color: var(--some-grey);
+  display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 100px auto;
 }
@@ -263,7 +263,7 @@ main h1 {
 
 .my-work {
   grid-column: 3;
-  margin-top: 50px;
+  margin: 50px 0 50px 0;
 }
 
 #project-img {
@@ -362,7 +362,7 @@ main h1 {
   grid-row: 3;
   grid-column: 2 / 6;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 100px);
+  grid-template-columns: repeat(auto-fill, 90px);
 }
 
 .social-box img {
@@ -378,8 +378,8 @@ main h1 {
 #lookaway {
   grid-column: 6 / 9;
   grid-row: 2 / 4;
-  width: 60%;
-  height: auto;
+  width: 70%;
+  /* height: auto; */
 }
 
 /* FOOTER */
@@ -406,7 +406,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 750px) {
   /* MEDIA MAIN
     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
@@ -478,17 +478,14 @@ footer {
     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
   #contact {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 100px auto auto;
-    grid-template-areas:
-      "cm cm cm cm cm cm"
-      "ic ic ic ic ic ic"
-      "di di di di di di";
   }
 
   #contact .content2 {
-    grid-area: ic;
     text-align: center;
+    grid-column: 1 / 6;
+    grid-row: 2;
   }
 
   #lookaway {
@@ -496,11 +493,18 @@ footer {
   }
 
   .social-box {
-    grid-template-columns: repeat(auto-fit, 75px);
-    grid-template-rows: 65px;
-    margin: 1rem;
+    grid-template-columns: repeat(auto-fit, 55px);
+    grid-template-rows: 55px;
+    grid-column: 1 / 6;
     justify-content: center;
-    align-items: flex-start;
+    padding: 10% 0 10% 0;
+    /* margin: 1rem;
+    justify-content: center;
+    align-items: flex-start; */
+  }
+  
+  footer {
+    grid-column: 1 / -1;
   }
 }
 
@@ -508,32 +512,27 @@ footer {
   #white-img {
     display: none;
   }
+
+  #projects {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+  }
+  .my-work {
+    grid-column: 3;
+    grid-row: 2;
+  }
 }
 
-@media screen and (max-width: 450px) {
-  #projects {
-    grid-template-rows: 100px 150px;
-    grid-template-areas:
-      "pr pr pr pr pr pr pr pr"
-      "mp mp mp mp mp mp mp mp";
-  }
+/* @media screen and (max-width: 450px) {
 
   .my-work {
     grid-template-rows: 110px;
     justify-content: center;
   }
-}
+} */
 
 @media screen and (max-width: 350px) {
   main {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:
-      "h h h"
-      ". a ."
-      ". c ."
-      ". p ."
-      ". s ."
-      ". m ."
-      ". f .";
   }
 }
