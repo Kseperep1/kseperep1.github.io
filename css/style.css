@@ -257,7 +257,7 @@ main h1 {
 #white-img {
   grid-column: 1 / 3;
   width: 60%;
-  padding: 10% 0 0 20%;
+  padding: 13% 0 0 11%;
   height: auto;
 }
 
@@ -367,9 +367,9 @@ main h1 {
 }
 
 .social-box img {
-  width: 75%;
-  height: auto;
-  float: center;
+  width: 70%;
+  /* height: auto;
+  float: center; */
 }
 
 .social-box img:hover {
@@ -442,7 +442,7 @@ footer {
     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
   #career {
-    margin: 3rem;
+    margin: 2rem 0rem 2rem 0rem;
   }
 
   .my-work {
@@ -456,7 +456,7 @@ footer {
     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
   #skills {
-    margin: 3rem;
+    margin: 2rem 0rem 2rem 0rem;
   }
 
   #skills .skill-box img {
@@ -466,7 +466,7 @@ footer {
 
   #skills .skill-box {
     grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-    padding: 10%;
+    padding: 4%;
   }
 
   .word {
@@ -520,10 +520,10 @@ footer {
 
   #skills .skill-box {
     grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
-    padding: 10%;
+    padding: 4%;
   }
   .pic {
-    height: 120px;
+    height: 80px;
     width: auto;
   }
 
@@ -533,8 +533,8 @@ footer {
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 310px) {
   main {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
