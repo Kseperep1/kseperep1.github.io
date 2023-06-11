@@ -52,7 +52,7 @@ body {
 
 header {
   position: fixed;
-  background-color: var(--sky-blue);
+  background-color: rgb(62 139 213 / 95%);
   left: -120%;
   height: 100%;
   width: 300px;
