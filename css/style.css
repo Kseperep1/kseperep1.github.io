@@ -400,13 +400,40 @@ footer {
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
+@media screen and (min-width: 1148px) {
+  #about img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1148px) {
+  #about img {
+    width: 120%;
+  }
+}
+
+@media screen and (max-width: 1026px) {
+  #about img {
+    width: 140%;
+  }
+  .content p {
+    font-size: 16px;
+}
+}
+
 @media screen and (max-width: 900px) {
   #skills .skill-box {
     grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
+  .content p {
+    font-size: 14px;
+}
+}
+
+@media screen and (max-width: 768px) {
   /* MEDIA MAIN
     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
@@ -437,6 +464,10 @@ footer {
   #about img {
     display: none;
   }
+
+  .content p {
+    font-size: 15px;
+}
 
   /* MEDIA CAREER
     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
