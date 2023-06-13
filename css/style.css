@@ -61,19 +61,19 @@ header {
   justify-content: center;
   flex-flow: column;
   text-align: center;
+  transition: all 0.3s linear;
 }
 
 header.header-on {
   left: 0%;
+  transition: all 0.3s linear;
 }
 
 #user img {
-  height: 100px;
-  width: 100px;
+  height: 120px;
   border-radius: 100%;
   object-fit: cover;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
+  margin: 1rem 0 1rem 0;
 }
 
 #user .name {
@@ -567,7 +567,10 @@ footer {
 @media screen and (max-width: 426px) {
   .content p {
     font-size: 14px;
-}
+  }
+  header {
+    width: 210px;
+  }
 }
 
 @media screen and (max-width: 310px) {
