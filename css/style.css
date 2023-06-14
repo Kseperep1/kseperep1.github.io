@@ -317,7 +317,6 @@ main h1 {
 
 .pic {
   grid-area: pic;
-  height: 180px;
 }
 
 .word {
@@ -368,8 +367,6 @@ main h1 {
 
 .social-box img {
   width: 70%;
-  /* height: auto;
-  float: center; */
 }
 
 .social-box img:hover {
@@ -548,20 +545,6 @@ footer {
     grid-column: 3;
     grid-row: 2;
   }
-
-  #skills .skill-box {
-    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
-    padding: 4%;
-  }
-  .pic {
-    height: 80px;
-    width: auto;
-  }
-
-  #skills .skill-box img {
-    padding: 1.5rem;
-    width: 6rem;
-  }
 }
 
 @media screen and (max-width: 426px) {
@@ -570,6 +553,9 @@ footer {
   }
   header {
     width: 210px;
+  }
+  #skills .skill-box {
+    grid-template-columns: repeat(auto-fill, minmax(68px, 1fr));
   }
 }
 
