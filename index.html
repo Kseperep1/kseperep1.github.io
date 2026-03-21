@@ -1,267 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    >
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="./logos/Kamo_black-removebg.png">
-    <title>Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kamo | Modern Code Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css" />
+    <!-- SVG Filters for Liquid/Fluid Effects -->
+    <svg style="display: none;">
+      <defs>
+        <filter id="liquid">
+          <feTurbulence type="fractalNoise" baseFrequency="0.01 0.01" numOctaves="1" result="warp" />
+          <feDisplacementMap in="SourceGraphic" in2="warp" scale="20" xChannelSelector="R" yChannelSelector="G" />
+        </filter>
+      </defs>
+    </svg>
   </head>
   <body>
-    <header>
-      <div id="user">
-        <a href="#logo">
-          <img
-            src="./logos/Kamo_white-removebg.png"
-            alt="A picture of my logo"
-          >
-        </a>
-        <h3 class="name">Kamogelo Seperepere</h3>
-        <p class="career">Software Developer</p>
-      </div>
-      <nav id="nav-bar">
-        <ul>
-          <li id="aboutBtn"><a href="#about">About</a></li>
-          <li id="careerBtn"><a href="#career">Career</a></li>
-          <li id="projectsBtn"><a href="#projects">Projects</a></li>
-          <li id="skillsBtn"><a href="#skills">Skills</a></li>
-          <li id="contactBtn"><a href="#contact">Contact</a></li>
-          <li>
-            <a id="btnDownload" href="resume/Kamogelo-Resume.pdf" target="_blank">
-              <i class="fa fa-download"></i>
-              Resume
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <div id="app">
+      <!-- Cursor Enhancement -->
+      <div class="custom-cursor"></div>
+      
+      <!-- Background Canvas for Unicorn Studio Style Animations -->
+      <canvas id="bg-canvas"></canvas>
 
-    <main>
-      <div id="logo">
-        <a href="#logo"
-          ><img
-            src="./logos/Kamo_white-removebg.png"
-            alt="A picture of my logo"
-        ></a>
-      </div>
+      <header class="glass-nav">
+        <nav>
+          <div class="logo">KAMO</div>
+          <div class="nav-links">
+            <a href="#about" class="nav-item">About</a>
+            <a href="#projects" class="nav-item">Projects</a>
+            <a href="#career" class="nav-item">Career</a>
+            <a href="#contact" class="nav-item">Contact</a>
+          </div>
+          <button class="cta-btn beam-container">
+            Get in touch
+            <span class="beam"></span>
+          </button>
+        </nav>
+      </header>
 
-      <div id="nav-menu" class="fa fa-bars" aria-hidden="true"></div>
+      <main>
+        <section id="hero" class="hero-section">
+          <div class="hero-content">
+            <h1 class="reveal-text">Designing <span class="accent">Fluid</span></h1>
+            <h1 class="reveal-text">Digital Experiences.</h1>
+            <p class="hero-subtext">Software Developer | UI/UX Motion Enthusiast</p>
+          </div>
+        </section>
 
-      <section id="about">
-        <h1>About Me!</h1>
-        <div class="content">
-          <p>
-            Hi, I'm Kamo, a web developer passionate about providing visitors with engaging and user-friendly experiences. 
-            My skills include HTML, CSS, JavaScript, and back-end technologies like PHP and MySQL. 
-            I have experience with responsive design and I always strive to follow the best SEO and website optimization practices. 
-            When I'm not coding, I enjoy spending time with friends, cooking YouTube meals, and watching movies.
-          </p>
-        </div>
+        <!-- About Section -->
+        <section id="about" class="section glass-card scroll-reveal">
+          <h2 class="section-title">About Me</h2>
+          <div class="content">
+            <p class="liquid-text">
+              Hi, I'm Kamo, a web developer passionate about providing visitors with engaging and user-friendly experiences. 
+              My skills include HTML, CSS, JavaScript, and back-end technologies like PHP and MySQL. 
+              I have experience with responsive design and I always strive to follow the best SEO and website optimization practices. 
+            </p>
+          </div>
+        </section>
 
-        <img src="./images/redbat-look.png" alt="myself">
-      </section>
-
-      <section id="career">
-        <h1>Career!</h1>
-        <div class="career-box">
-          <h2>Midrand High School, Midrand</h2>
-          <h4>2016</h4>
-          <h5>Matriculated</h5>
-          <h2>WeThinkCode, Johannesburg</h2>
-          <h4>JAN 2019 - Aug 2020</h4>
-          <h5>Software Development Student</h5>
-          <h2>BBD Software Company, Johannesburg</h2>
-          <h4>FEB 2020 - Mar 2020</h4>
-          <h5>Intern Software Developer</h5>
-          <h2>Vodacom - Vodaworld, Midrand</h2>
-          <h4>APR 2020 - AUG 2020</h4>
-          <h5>Intern Software Developer</h5>
-          <h2>Umuzi.org, Remote</h2>
-          <h4>JAN 2023 - NOV 2023</h4>
-          <h5>Web Developer Student</h5>
-          <h2>FLOW Communications, Remote</h2>
-          <h4>DEC 2023 - MAR 2024</h4>
-          <h5>Intern Software Developer</h5>
-          <h4>MAR 2024 - PRESENT</h4>
-          <h5>Junior Software Developer</h5>
-        </div>
-      </section>
-
-      <section id="projects">
-        <h1>Projects!</h1>
-
-        <img id="white-img" src="./images/white-shirt.png " alt="myself">
-
-        <div class="my-work">
-          <img
-            id="project-img"
-            src="./images/coming-soon-5383990.jpg"
-            alt="coming soon"
-          >
-        </div>
-      </section>
-
-      <section id="skills">
-        <h1>Skills!</h1>
-
-        <div class="skill-box">
-          <div class="picture">
-            <div class="pic">
-              <img src="./logos/javascript3.png" alt="javascript logo">
-            </div>
-            <div class="word">
-              <p>Javascript</p>
+        <!-- Marquee Skills Section -->
+        <section id="skills" class="section">
+          <h2 class="section-title">Skills & Tech Stack</h2>
+          <div class="marquee-container">
+            <div class="marquee-content">
+              <span>Javascript</span>
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>Jquery</span>
+              <span>Jasmine</span>
+              <span>Microsoft Office</span>
+              <span>C</span>
+              <span>Git</span>
+              <span>PHP</span>
+              <span>MySQL</span>
+              <!-- Duplicate for seamless loop -->
+              <span>Javascript</span>
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>Jquery</span>
+              <span>Jasmine</span>
+              <span>Microsoft Office</span>
+              <span>C</span>
+              <span>Git</span>
+              <span>PHP</span>
+              <span>MySQL</span>
             </div>
           </div>
+        </section>
 
-          <div class="picture">
-            <div class="pic">
-              <img src="./logos/html4.png" alt="html5">
+        <!-- Projects Section (Cards) -->
+        <section id="projects" class="section">
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="project-grid">
+            <div class="project-card glass-card beam-container">
+              <span class="beam"></span>
+              <div class="card-inner">
+                <h3>Vortex AI</h3>
+                <p>A cinematic AI assistant interface.</p>
+                <div class="tags"><span>React</span><span>GSAP</span></div>
+              </div>
             </div>
-            <div class="word">
-              <p>HTML5</p>
-            </div>
-          </div>
-
-          <div class="picture">
-            <div class="pic">
-              <img src="./logos/css34.png" alt="css icon">
-            </div>
-            <div class="word">
-              <p>CSS</p>
-            </div>
-          </div>
-
-          <div class="picture">
-            <div class="pic">
-              <img src="./logos/jquery-green.png" alt="jquery">
-            </div>
-            <div class="word">
-              <p>Jquery</p>
+            <div class="project-card glass-card beam-container">
+              <span class="beam"></span>
+              <div class="card-inner">
+                <h3>Inkspire</h3>
+                <p>Studio business management system.</p>
+                <div class="tags"><span>Vite</span><span>Firebase</span></div>
+              </div>
             </div>
           </div>
+        </section>
 
-          <div class="picture">
-            <div class="pic">
-              <img src="./logos/jasmine-1-logo.png" alt="jasmine">
+        <!-- Career Timeline (Noodle Connections) -->
+        <section id="career" class="section">
+          <h2 class="section-title">Career Journey</h2>
+          <div class="timeline">
+            <svg class="noodle-path" width="2" height="100%"></svg>
+            <div class="timeline-item scroll-reveal" data-year="2024">
+              <h4>Junior Software Developer</h4>
+              <h5>FLOW Communications</h5>
+              <p>Present - Building high-end web applications.</p>
             </div>
-            <div class="word">
-              <p>Jasmine</p>
+            <div class="timeline-item scroll-reveal" data-year="2023">
+              <h4>Web Developer Student</h4>
+              <h5>Umuzi.org</h5>
+              <p>Intensive full-stack training.</p>
             </div>
-          </div>
-
-          <div class="picture">
-            <div class="pic">
-              <img src="./logos/microsoft-office.png" alt="microsoft office">
-            </div>
-            <div class="word">
-              <p>Microsoft Office</p>
-            </div>
-          </div>
-
-          <div class="picture">
-            <div class="pic">
-              <img
-                src="./logos/c-programming-icon.png"
-                alt="c-programming-icon"
-              >
-            </div>
-            <div class="word">
-              <p>C</p>
+            <div class="timeline-item scroll-reveal" data-year="2020">
+              <h4>Intern Software Developer</h4>
+              <h5>Vodacom | BBD</h5>
+              <p>Practical industry exposure.</p>
             </div>
           </div>
+        </section>
 
-          <div class="picture">
-            <div class="pic">
-              <img src="./logos/Git-Logo-White.png" alt="git-icon">
-            </div>
-            <div class="word">
-              <p>Git</p>
-            </div>
+        <!-- Contact Section -->
+        <section id="contact" class="section glass-card beam-container">
+          <span class="beam"></span>
+          <h2 class="section-title">Let's Connect</h2>
+          <div class="contact-links">
+            <a href="mailto:Kamogelo40@gmail.com" class="contact-item">Kamogelo40@gmail.com</a>
+            <a href="tel:0614216476" class="contact-item">061 421 6476</a>
           </div>
-
-          <div class="picture">
-            <div class="pic">
-              <img src="./logos/PHP-logo.svg.png" alt="php icon">
-            </div>
-            <div class="word">
-              <p>PHP</p>
-            </div>
+          <div class="socials">
+            <a href="#" class="social-icon">Li</a>
+            <a href="#" class="social-icon">Gh</a>
+            <a href="#" class="social-icon">Tw</a>
           </div>
-
-          <div class="picture">
-            <div class="pic">
-              <img src="./logos/mysql-light.png" alt="MySql icon">
-            </div>
-            <div class="word">
-              <p>MySql</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact">
-        <h1>Contact Me!</h1>
-
-        <div class="content2">
-          <h2><i class="fa fa-phone">  061 421 6476</i></h2>
-          <h4><i class="fa fa-envelope">  Kamogelo40 @gmail.com</i></h4>
-          <h5><i class="fa fa-map-marker-alt">  Tembisa, East Rand</i></h5>
-        </div>
-        <div class="social-box">
-          <a
-            href="https://www.facebook.com/Kamogelo.Seperepere/"
-            target="_blank"
-          >
-            <img src="logos/facebook.png" alt="facebook-link"
-          ></a>
-
-          <a
-            href="https://www.linkedin.com/in/kamogelo-seperepere"
-            target="_blank"
-          >
-            <img src="logos/linkedIn.png" alt="linkedin-link"
-          ></a>
-
-          <a href="https://wa.link/ob19yz" target="_blank">
-            <img src="logos/whatsapp.png" alt="whatsapp-link"
-          ></a>
-
-          <a href="https://github.com/Kseperep1" target="_blank">
-            <img src="logos/github-white.png" alt="git-link"
-          ></a>
-
-          <a href="https://www.instagram.com/tha_boyz_cookin/" target="_blank">
-            <img src="logos/instagram.png" alt="instagram-link"
-          ></a>
-        </div>
-
-        <img
-          id="lookaway"
-          src="./images/redbat-lookaway1.png"
-          alt="grey hoodie myself"
-        >
-      </section>
-      <footer>
-        <h4>Created by Kamogelo Seperepere © 2022</h4>
-      </footer>
-    </main>
-
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-
-    <script src="src/script.js"></script>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
