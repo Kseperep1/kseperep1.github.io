@@ -112,6 +112,45 @@ nav {
   transition: transform 0.1s ease-out;
 }
 
+/* 80s Grid Container */
+#grid-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -2;
+  perspective: 1000px;
+}
+
+/* Hero Image */
+.hero-image-container {
+  margin-top: 3rem;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.floating-image {
+  width: 100%;
+  border-radius: 20px;
+  -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent);
+  mask-image: linear-gradient(to bottom, black 80%, transparent);
+}
+
+/* About Flex */
+.about-flex {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.about-image img {
+  width: 300px;
+  border-radius: 20px;
+}
+
 /* Background Canvas */
 #bg-canvas {
   position: fixed;
@@ -147,8 +186,8 @@ nav {
 
 .accent {
   background: linear-gradient(90deg, var(--accent-color), var(--accent-secondary));
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
